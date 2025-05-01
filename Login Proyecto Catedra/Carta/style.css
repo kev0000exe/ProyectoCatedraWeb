@@ -1,0 +1,546 @@
+/*Codigo para la Carta o menu */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+
+
+
+/* Boton para soporte*/
+
+/* From Uiverse.io by gagan-gv */ 
+/* From Uiverse.io by gagan-gv */ 
+/* From Uiverse.io by gagan-gv */ 
+.btn {
+    
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: #eeeeed;
+    border-radius: 80px;
+    border: none;
+    padding: 0 80px;
+    transition: all .2s ease;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .btn:hover {
+    transform: scale(1.1);
+   }
+   
+   .btn span {
+    position: absolute;
+    z-index: 99;
+    width: 150px;
+    height: 50px;
+    border-radius: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #eeeeed;
+    background-color: #1f1f1f;
+    padding: 0 10px;
+    transition: all 1.2s ease;
+   }
+   
+   .btn .container {
+    display: flex;
+    width: 150px;
+    border-radius: 80px;
+    line-height: 50px;
+   }
+   
+   .btn svg {
+    padding: 0 5px;
+    opacity: 0;
+   }
+   
+   .btn .container svg:nth-of-type(1) {
+    transition-delay: 0.65s;
+   }
+   
+   .btn .container svg:nth-of-type(2) {
+    transition-delay: 0.8s;
+   }
+   
+   .container svg:nth-of-type(3) {
+    transition-delay: 0.5s;
+   }
+   
+   .btn:hover span {
+    opacity: 0;
+   }
+   
+   .btn:hover svg {
+    opacity: 1;
+   }
+  
+  
+/*Carrito */
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+/* Botón Checkout personalizado, sin conflictos */
+.btn-checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .btn-checkout .texto-checkout {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .btn-checkout svg path {
+    transition: 400ms;
+  }
+  
+  .btn-checkout:hover {
+    background-color: transparent;
+  }
+  
+  .btn-checkout:hover .texto-checkout {
+    color: #181717;
+  }
+  
+  .btn-checkout:hover svg path {
+    fill: #181717;
+  }
+  
+
+
+
+
+
+
+
+.container-hero {
+	background-color: #ffffff;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.customer-support i {
+	font-size: 3.3rem;
+}
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container-logo i {
+	font-size: 3rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container-user .fa-user {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-right: 2.5rem;
+	border-right: 1px solid #000000;
+}
+
+.container-user .fa-basket-shopping {
+	font-size: 3rem;
+	color: var(--primary-color);
+	padding-left: 1rem;
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ************* NAVBAR ************* */
+.navbar container {
+	background-color: #000;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 2rem;
+	background-color: #fff;
+	height: 4.4rem;
+	overflow: hidden;
+}
+
+.search-form input {
+	outline: none;
+	font-family: inherit;
+	border: none;
+	width: 25rem;
+	font-size: 1.4rem;
+	padding: 0 2rem;
+	color: #777;
+	cursor: pointer;
+}
+
+.search-form input::-webkit-search-cancel-button {
+	appearance: none;
+}
+
+.search-form .btn-search {
+	border: none;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
+}
+
+.btn-search i {
+	font-size: 2rem;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+#Menu2{
+    position: fixed;
+    justify-content: left;
+    background-position: left top; /* Alinea la imagen a la izquierda arriba */
+    height: 1200px;
+    background-repeat: no-repeat;
+    width :  50%;
+    margin: 20px;
+    margin: 0;
+    
+    overflow: hidden;
+    background-attachment: fixed;
+    
+    
+}
+
+
+/*Botones de la carta*/
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #c1aa94;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #000000;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #c1aa94;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+  .card{
+    width: 22rem; /* Aumenta el ancho de las tarjetas */
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Opcional: agrega una sombra para destacar las tarjetas */
+}
+  
+.body{
+    width: 22rem; /* Aumenta el ancho de las tarjetas */
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Opcional: agrega una sombra para destacar las tarjetas */
+}
+
+  
+.card .btn {
+    display: block; /* Convierte el botón en un elemento de bloque */
+    margin: 10px auto; /* Centra el botón horizontalmente */
+    border-top: none; /* Quita el borde superior */
+    border-right: none; /* Quita el borde derecho */
+    border-left: none; /* Quita el borde izquierdo */
+    border-radius: 0; /* Opcional: elimina los bordes redondeados */
+    text-align: center; /* Asegura que el texto del botón esté centrado */
+}
+
+.button-container {
+    
+   margin-left: 20%;
+}
+.card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 220px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Mantiene las proporciones de la imagen y recorta si es necesario */
+    border-radius: 10px; /* Opcional: agrega bordes redondeados */
+}
+
+
+.cof{
+    position: fixed;
+    justify-content: left;
+    background-position: left top; /* Alinea la imagen a la izquierda arriba */
+    height: 1200px;
+    background-repeat: no-repeat;
+    width :  50%;
+    margin: 20px;
+    margin: 0;
+    
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+
+  
+.Footer2{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-color: #ffffff; /* Color base del fondo */
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: ""; /* Crea un pseudo-elemento vacío */
+    position: fixed; /* Fija el fondo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #4b3621); /* De negro a café */
+    z-index: -1; /* Envía el pseudo-elemento al fondo */
+    pointer-events: none; /* Evita que interfiera con el contenido */
+}
+
+
+
+.cartaOpciones{
+    
+    overflow-y: auto;
+    position: absolute;
+   
+    background: rgb(255, 255, 255);
+  
+ 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    top: 80px;
+    left: 765px;
+    height: 3300px;
+    width: 65%;
+    border-radius: 20px;
+}
+.contenedor-principal {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+
+.Yavi{
+width: 450px;
+height: 500px;
+background: #ffffff;
+border-radius: 25px;
+
+margin-top: 120px;
+margin-left: 200px;
+/*
+box-shadow: 0 4px 15px #000;
+*/
+
+display: flex;
+position: static;
+
+}
+.ContainerYavi{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    width: 450px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 25px;
+    margin-top: 10%;
+  
+    margin-left: 200px;
+
+    position: static;
+   
+}
+
+.container mt-5{
+    margin: 0;
+}
+.row {
+    display: flex; /* Activa Flexbox */
+    flex-wrap: wrap; /* Permite que las cartas se ajusten en filas */
+    justify-content: center; /* Centra las cartas horizontalmente */
+    gap: 20px; /* Espacio entre las cartas */
+   
+}
+
+.card {
+    width: 18rem; /* Asegura que todas las cartas tengan el mismo ancho */
+    background: #ffffff;
+    border-radius: 25px;
+    
+}
+
+.InfoCarta3{
+    text-align: left;
+    margin-top: 50px;
+}
+.InfoCarta2{
+    
+   
+   
+    width: 600px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    
+}
