@@ -17,5 +17,14 @@ namespace TiendasAPI.Data
         public DbSet<Favorito> Favoritos { get; set; }
         public DbSet<Servicio> Servicios { get; set; }
         public DbSet<Evento> Eventos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Producto>()
+                .Property(p => p.Precio)
+                .HasColumnType("decimal(18,2)"); // Configura la precisión y escala del tipo decimal
+        }
     }
 }

@@ -59,19 +59,33 @@
     </div>
   </nav>
 
+  <main>
+
   <div id="cofflog" class="cof"></div>
 
 <div class="login">
   <h1 class="Registro_Usuario">Registro Usuario</h1>
  <h2 class="Contraseña Re--Usuario">Usuario</h2> 
+
   <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">@</span>
-    <input type="text" class="form-control2" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" id="nombre" class="form-control2" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
   </div>
+
+  <div><h2 class="Contraseña Re--Edad">Fecha de Nacimiento:</h2>   
+    
+    <div class="inputbox">
+    
+      <input type="number" id="day" placeholder="Día" min="1" max="31" />
+      <input type="number" id="month" placeholder="Mes" min="1" max="12" />
+      <input type="number" id="year" placeholder="Año" min="1900" max="2025" />
+    </div>
+
+
   <h2 class="Contraseña RE--Correo">Correo</h2>
   <div class="input-group mb-3">
    
-    <input type="text" class="form-control3" placeholder="Correo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <input type="text" id="emailUser" class="form-control3" placeholder="Correo" aria-label="Recipient's username" aria-describedby="basic-addon2">
     <span class="input-group-text" id="basic-addon2">@example.com</span>
     
   </div>
@@ -79,9 +93,9 @@
 
 <h2 class="Contraseña">Contraseña</h2>
   <div class="input-group mb-3">
-    <input type="text" class="Contraseña_Usuario" placeholder="Secreto123" aria-label="password">
+    <input type="password" id="password" class="Contraseña_Usuario" placeholder="Secreto123" aria-label="password">
     <span class="input-group-text">@</span>
-    <input type="text" class="Contraseña_Usuario Con--Repetir" placeholder="Repetir" aria-label="password">
+    <input type="password" id="repeatPassword" class="Contraseña_Usuario Con--Repetir" placeholder="Repetir" aria-label="password">
   </div>
   
 
@@ -109,7 +123,7 @@
 
   <div class="BTN_confirmar">
 
-<button class=" BTN--2">Confirmar</button> <button class="BTN--3"><a href="../login/Login.html" class="LoginCreada">Ya tengo cuenta</a></button>
+<button id="btnConfirmar" class=" BTN--2">Confirmar</button> <button class="BTN--3"><a href="../login/Login.html" class="LoginCreada">Ya tengo cuenta</a></button>
 
   </div>
 
@@ -118,7 +132,7 @@
   
   
 
-
+</main>
 
 
 
@@ -169,4 +183,54 @@
 
 <script src="script.js"></script>
 </body>
+
+<script>
+  document.getElementById('btnConfirmar').addEventListener('click', async function () {
+      const nombre = document.getElementById('nombre').value;
+      const dia = document.getElementById('day').value;
+      const mes = document.getElementById('month').value;
+      const anio = document.getElementById('year').value;
+      const emailLocal = document.getElementById('emailUser').value;
+      const email = emailLocal + "@example.com";
+      const contrasena = document.getElementById('password').value;
+      const repetir = document.getElementById('repeatPassword').value;
+  
+      if (contrasena !== repetir) {
+          alert("Las contraseñas no coinciden");
+          return;
+      }
+  
+      // Convertir fecha a formato ISO (yyyy-MM-dd)
+      const fechaNacimiento = `${anio.padStart(4, '0')}-${mes.padStart(2, '0')}-${dia.padStart(2, '0')}`;
+  
+      const datos = {
+    nombre: nombre,
+    email: email,
+    fechaNacimiento: fechaNacimiento,
+    Contraseña: contrasena  // ← usa 'ñ' y mayúscula
+};
+  
+      try {
+        const response = await fetch('https://localhost:7151/api/Usuarios/registrar',   {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(datos)
+          });
+  
+          const result = await response.text();
+  
+          if (response.ok) {
+              alert("✅ Usuario registrado: " + result);
+          } else {
+              alert("❌ Error al registrar: " + result);
+          }
+      } catch (error) {
+          console.error(error);
+          alert("❌ Error de conexión con el servidor.");
+      }
+  });
+  </script>
+  
 </html>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "quqyA/o6oQA=",
+  "dgSpecHash": "K7ku3VjEqNU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+  "projectFilePath": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gamer\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gamer\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

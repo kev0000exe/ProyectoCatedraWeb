@@ -23,13 +23,13 @@ namespace TiendasAPI.Controllers
         [HttpPost("registrar")]
         public async Task<IActionResult> Registrar(UsuarioRegistroDTO dto)
         {
-            var existe = await _context.Usuarios.AnyAsync(u => u.Correo == dto.Correo);
+            var existe = await _context.Usuarios.AnyAsync(u => u.Email == dto.Email);
             if (existe) return BadRequest("Ya existe un usuario con ese correo.");
 
             var usuario = new Usuario
             {
                 Nombre = dto.Nombre,
-                Correo = dto.Correo,
+                Correo = dto.Email,
                 Contraseña = dto.Contraseña // Deberías hashearla si fuera producción
             };
 

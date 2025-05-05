@@ -1,86 +1,113 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\",
+  "WorkspaceRootPath": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\data\\tiendasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\data\\tiendasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\controllers\\controllersauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\controllersauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\services\\servicesjwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\services\\servicesjwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\calificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\calificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\dtos\\dtosusuarioregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\dtos\\dtosusuarioregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\dtos\\dtosusuariologindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\dtos\\dtosusuariologindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\migrations\\20250505034239_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\migrations\\20250505034239_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\tiendasapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\tiendasapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\services\\servicesjwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\services\\servicesjwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\login proyecto catedra\\registrar\\registrar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\registrar\\registrar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\dtos\\dtosusuarioregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\dtos\\dtosusuarioregistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\tiendacs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\controllers\\controllersauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\controllersauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\login proyecto catedra\\login\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\login\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\dtos\\dtosusuariologindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\dtos\\dtosusuariologindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\calificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\calificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\tiendacs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\tiendacs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\models\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\models\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\favorito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\onedrive\\escritorio\\proyectoprogra\\tiendasapi\\tiendasapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\gamer\\source\\repos\\tiendasapi\\tiendasapi\\tiendasapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\tiendasapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,10 +129,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
@@ -120,11 +143,103 @@
         },
         {
           "DockedWidth": 133,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\WeatherForecast.cs",
+              "RelativeToolTip": "TiendasApi\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:54:08.98Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TiendasDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Data\\TiendasDbContext.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Data\\TiendasDbContext.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Data\\TiendasDbContext.cs",
+              "RelativeToolTip": "TiendasApi\\Data\\TiendasDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:06:58.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "TiendasApi\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAswOgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:53:18.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250505034239_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Migrations\\20250505034239_Inicial.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Migrations\\20250505034239_Inicial.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Migrations\\20250505034239_Inicial.cs",
+              "RelativeToolTip": "TiendasApi\\Migrations\\20250505034239_Inicial.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAIwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:52:48.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NuGet.Config",
+              "DocumentMoniker": "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\NuGet\\NuGet.Config",
+              "ToolTip": "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Roaming\\NuGet\\NuGet.Config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-05T01:17:11.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Registrar.html",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Registrar\\Registrar.html",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Registrar\\Registrar.html",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Registrar\\Registrar.html",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\Registrar\\Registrar.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-04T23:24:18.384Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\web.config",
+              "RelativeDocumentMoniker": "TiendasApi\\web.config",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\web.config",
+              "RelativeToolTip": "TiendasApi\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-05T00:14:35.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -132,11 +247,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "Login.html",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\login\\Login.html",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\login\\Login.html",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\login\\Login.html",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\login\\Login.html",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwH4AAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-02T00:40:13.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ServicesJwtService.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Services\\ServicesJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Services\\ServicesJwtService.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Services\\ServicesJwtService.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Services\\ServicesJwtService.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Services\\ServicesJwtService.cs",
               "RelativeToolTip": "TiendasApi\\Services\\ServicesJwtService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,245 +272,227 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\appsettings.json",
               "RelativeDocumentMoniker": "TiendasApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\appsettings.json",
               "RelativeToolTip": "TiendasApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-01T21:09:52.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Usuario.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T21:08:10.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Tiendacs.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Tiendacs.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Tiendacs.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Tiendacs.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Tiendacs.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Tiendacs.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Tiendacs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T21:07:38.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T21:07:38.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Servicio.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Servicio.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Servicio.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Servicio.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Servicio.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Servicio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T21:07:10.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T21:07:10.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Producto.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Producto.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Producto.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T21:01:05.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Pedido.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Pedido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T21:00:36.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T21:00:36.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Favorito.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Favorito.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Favorito.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Favorito.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Favorito.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Favorito.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Favorito.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T21:00:01.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T21:00:01.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "Evento.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Evento.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Evento.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Evento.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Evento.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Evento.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Evento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:59:22.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:59:22.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "Calificacion.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Calificacion.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Calificacion.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Calificacion.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Models\\Calificacion.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Models\\Calificacion.cs",
               "RelativeToolTip": "TiendasApi\\Models\\Calificacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:58:39.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:58:39.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "DTOsUsuarioLoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
               "RelativeDocumentMoniker": "TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
               "RelativeToolTip": "TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:57:34.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:57:34.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "DTOsUsuarioRegistroDTO.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
               "RelativeDocumentMoniker": "TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
               "RelativeToolTip": "TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T20:56:37.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "TiendasApi\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T20:55:26.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "TiendasApi\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\WeatherForecast.cs",
-              "RelativeToolTip": "TiendasApi\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:54:08.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Program.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Program.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Program.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Program.cs",
               "RelativeToolTip": "TiendasApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T20:53:48.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Controllers\\UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "TiendasApi\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAuwKYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T20:53:33.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "ControllersAuthController.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Controllers\\ControllersAuthController.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Controllers\\ControllersAuthController.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Controllers\\ControllersAuthController.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Controllers\\ControllersAuthController.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Controllers\\ControllersAuthController.cs",
               "RelativeToolTip": "TiendasApi\\Controllers\\ControllersAuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwB8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T20:52:55.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 19,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "TiendasApi\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:52:09.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:52:09.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "TiendasApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\Properties\\launchSettings.json",
               "RelativeToolTip": "TiendasApi\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-01T20:51:34.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:51:34.863Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 8,
               "Title": "TiendasApi.csproj",
-              "DocumentMoniker": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+              "DocumentMoniker": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
               "RelativeDocumentMoniker": "TiendasApi\\TiendasApi.csproj",
-              "ToolTip": "C:\\Users\\gamer\\source\\repos\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+              "ToolTip": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
               "RelativeToolTip": "TiendasApi\\TiendasApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

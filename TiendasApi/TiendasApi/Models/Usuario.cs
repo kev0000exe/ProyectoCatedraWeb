@@ -8,5 +8,6 @@
         public string Contraseña { get; set; }
         public string TipoUsuario { get; set; }
         public string Correo { get; set; }
+        public DateTime FechaNacimiento { get; set; }  // <- Aquí también
     }
 }

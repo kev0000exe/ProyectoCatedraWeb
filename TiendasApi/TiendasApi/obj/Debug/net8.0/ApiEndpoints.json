@@ -141,6 +141,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TiendasAPI.Controllers.UsuariosController",
+    "Method": "Login",
+    "RelativePath": "api/Usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TiendasAPI.DTOs.UsuarioLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TiendasAPI.Controllers.UsuariosController",
+    "Method": "GetPerfil",
+    "RelativePath": "api/Usuarios/perfil",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TiendasAPI.Controllers.UsuariosController",
+    "Method": "Registrar",
+    "RelativePath": "api/Usuarios/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TiendasAPI.DTOs.UsuarioRegistroDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TiendasAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

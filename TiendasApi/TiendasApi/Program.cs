@@ -1,41 +1,58 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using TiendasAPI.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TiendasAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuraci�n de la cadena de conexi�n a la base de datos
+// 🔑 Leer configuración JWT desde appsettings.json
+var jwtConfig = builder.Configuration.GetSection("Jwt");
+
+// 🔌 Configuración de cadena de conexión
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+// 🧩 Agrega servicios
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// 🔐 Configuración de JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("tu_clave_secreta")),
-            ValidateIssuer = false,  // Cambiar a true si usas un emisor
-            ValidateAudience = false,  // Cambiar a true si usas una audiencia
-            ValidateLifetime = true,  // Validar la expiraci�n del token
-            ClockSkew = TimeSpan.Zero  // Evitar retrasos en la expiraci�n
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtConfig["Issuer"],
+            ValidAudience = jwtConfig["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtConfig["Key"])),
+            ClockSkew = TimeSpan.Zero
         };
     });
 
 builder.Services.AddAuthorization();
 
+// 🌍 CORS para permitir peticiones del frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
-// Configuraci�n del pipeline de solicitudes
+// 🧪 Swagger solo en desarrollo
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -44,10 +61,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Middleware para autenticaci�n y autorizaci�n
+// 🔐 Middlewares de seguridad
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
+// 🗺️ Mapear controladores
 app.MapControllers();
 
 app.Run();
