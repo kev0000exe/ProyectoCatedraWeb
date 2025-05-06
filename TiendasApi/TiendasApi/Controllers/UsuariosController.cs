@@ -134,6 +134,9 @@ namespace TiendasAPI.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            if (string.IsNullOrWhiteSpace(dto.Email))
+                return BadRequest("El campo Email es obligatorio.");
+
             if (await _context.Usuarios.AnyAsync(u => u.Email == dto.Email))
                 return BadRequest("El email ya está registrado.");
 
@@ -142,6 +145,8 @@ namespace TiendasAPI.Controllers
             {
                 Nombre = dto.Nombre,
                 Email = dto.Email,
+                Correo = dto.Email, // ← Usa el mismo valor o pídelo por separado
+                TipoUsuario = "Cliente", // ← Puedes fijar un valor por defecto o pedirlo en el DTO
                 FechaNacimiento = dto.FechaNacimiento,
                 Contraseña = "" // Será hasheada abajo
             };
@@ -154,6 +159,8 @@ namespace TiendasAPI.Controllers
             return Ok("Usuario registrado correctamente.");
         }
 
+
+
         [Authorize]
         [HttpGet("perfil")]
         public IActionResult GetPerfil()
@@ -163,4 +170,5 @@ namespace TiendasAPI.Controllers
         }
 
     }
+
 }

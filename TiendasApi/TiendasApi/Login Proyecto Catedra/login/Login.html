@@ -135,4 +135,47 @@
     
     
 </body>
+
+<script>
+  document.querySelector('.BTN--Iniciar').addEventListener('click', async function () {
+    const correo = document.querySelector('.form-controlLogin').value;
+    const contraseña = document.querySelector('.form-controlContraseña').value;
+
+    try {
+      const response = await fetch("https://localhost:7151/api/Auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          correo: correo,
+          contraseña: contraseña
+        })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        alert("Inicio de sesión exitoso");
+
+        // Guarda el token en localStorage
+        localStorage.setItem("token", data.token);
+
+        // Redirige a la página principal
+        window.location.href = "../PaginInicio/index.html";
+      } else {
+        const error = await response.text();
+        alert("Error al iniciar sesión: " + error);
+      }
+      if (!correo || !contraseña) {
+  alert("Por favor, completa todos los campos.");
+  return;
+}
+    } catch (error) {
+      console.error("Error de red:", error);
+      alert("No se pudo conectar con el servidor.");
+    }
+  });
+</script>
+
+
 </html>

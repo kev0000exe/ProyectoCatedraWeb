@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using TiendasAPI.Data;
 using TiendasAPI.DTOs;
 using TiendasAPI.Models;
 using TiendasAPI.Services;
-using Microsoft.EntityFrameworkCore;
 
 namespace TiendasAPI.Controllers
 {
@@ -23,15 +24,21 @@ namespace TiendasAPI.Controllers
         [HttpPost("registrar")]
         public async Task<IActionResult> Registrar(UsuarioRegistroDTO dto)
         {
-            var existe = await _context.Usuarios.AnyAsync(u => u.Email == dto.Email);
+            // Validar si ya existe el correo
+            var existe = await _context.Usuarios.AnyAsync(u => u.Correo == dto.Email);
             if (existe) return BadRequest("Ya existe un usuario con ese correo.");
+
+            var hasher = new PasswordHasher<Usuario>();
 
             var usuario = new Usuario
             {
                 Nombre = dto.Nombre,
                 Correo = dto.Email,
-                Contraseña = dto.Contraseña // Deberías hashearla si fuera producción
+                FechaNacimiento = dto.FechaNacimiento,
+                Contraseña = "" // Se reemplazará con el hash
             };
+
+            usuario.Contraseña = hasher.HashPassword(usuario, dto.Contraseña);
 
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
@@ -43,9 +50,15 @@ namespace TiendasAPI.Controllers
         public async Task<IActionResult> Login(UsuarioLoginDTO dto)
         {
             var usuario = await _context.Usuarios
-                .FirstOrDefaultAsync(u => u.Correo == dto.Correo && u.Contraseña == dto.Contraseña);
+                .FirstOrDefaultAsync(u => u.Correo == dto.Correo);
 
             if (usuario == null)
+                return Unauthorized("Correo o contraseña incorrectos.");
+
+            var hasher = new PasswordHasher<Usuario>();
+            var resultado = hasher.VerifyHashedPassword(usuario, usuario.Contraseña, dto.Contraseña);
+
+            if (resultado != PasswordVerificationResult.Success)
                 return Unauthorized("Correo o contraseña incorrectos.");
 
             var token = _jwtService.GenerarToken(usuario);

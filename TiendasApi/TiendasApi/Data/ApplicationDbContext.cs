@@ -20,11 +20,15 @@ namespace TiendasAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<Producto>()
-                .Property(p => p.Precio)
-                .HasColumnType("decimal(18,2)"); // Configura la precisión y escala del tipo decimal
+            modelBuilder.Entity<Usuario>(entity =>
+            {
+                entity.Property(u => u.Email)
+                      .IsRequired(); // Configura la columna como obligatoria
+            });
         }
+
+
+
     }
+
 }
