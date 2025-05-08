@@ -173,8 +173,8 @@
   <img src="imagenes/ChatGPT Image 22 abr 2025, 10_58_49 p.m..png" alt="" >
 </div>
   <div class="fondoChef">
-
-    <img src="imagenes/chef (1).png" alt="Chef">
+    <div class="fondoBlanco"></div>
+    <img src="imagenes/chef.jpg" alt="Chef">
   </div>
   
   <div class="fondoChef">
@@ -274,14 +274,12 @@ I built this slider when I first started to learn JS, you can rebuild it with mo
     <div class="Productos">
 
       <div class="productos2">
-        <h2 class="H2Categoria">!Nueva Categoria de productos!</h2>
+        <h2 class="H2Categoria">¡NUEVA CATEGORÍA DE CAFÉ! Granos, molido y más. ¡Tu próximo café favorito te espera!</h2>
 
         <figure class="boton-contenedor-unico">
     <div class="boton-grupo-unico">
-        <button class="boton-iniciar-unico">Iniciar sesión</button>
-        <button class="boton-registrar-unico">
-            <a href="../Registrar/Registrar.html" class="enlace-registrar-unico">Crear Cuenta</a>
-        </button>
+        <button class="boton-iniciar-unico">Mas</button>
+        
     </div>
 </figure>
 
@@ -305,10 +303,24 @@ I built this slider when I first started to learn JS, you can rebuild it with mo
         
     </div>
     <div class="infoDelivery">
-      <h2>¡Te lo llevamos!</h2>
-      <p> Disfruta tu experiencia Starbucks® en casa, en la oficina o donde tú prefieras.
+      
 
-        Pide tu latte favorito, comparte un desayuno con los tuyos y pide ese combo de croissants, cinnamon rolls, napolitanas... o disfruta más de tu tarde con tu Frappuccino preferido y una deliciosa cookie. Escoge tu agregador habitual y pide!</p>
+      <div class="contenedorMotorista">
+        <img src="imagenes/motorista.png" alt="Motorista" class="motorista">   >
+    </div>
+    <h2 class="llevamos2">¡Te lo llevamos!</h2>
+    <div class="textoInfoDelivery3">
+
+      
+    <div class="textoInfoDelivery">
+      
+      <p> ¡Disfruta tu experiencia Caffe Airrod Coffee® en casa, en la oficina o donde tú prefieras!
+
+        Pide tu latte favorito, comparte un desayuno con los tuyos y elige entre nuestros combos de croissants, cinnamon rolls, napolitanas... O haz que tus tardes sean más especiales con tu Frappuccino preferido acompañado de una deliciosa cookie. Escoge tu plataforma de delivery habitual y ¡haz tu pedido ahora!</p>
+    </div>
+    
+    </div>
+      
 
         <button class="infoDelivery2">Mas</button>
   </div>
@@ -323,7 +335,7 @@ I built this slider when I first started to learn JS, you can rebuild it with mo
     <div class="Carta">
       <div class="Menu">
       <div class="videoCarta">
-        <video autoplay loop muted > <source src="videos/youtube_HawZHAHya5U_1280x720_h264.mp4" type="video/mp4"> Tu navegador no soporta</video>
+        <video autoplay loop muted > <source src="videos/0506 (2)(2).mp4" type="video/mp4"> Tu navegador no soporta</video>
         <button class="botonMas">Más</button>
       </div>
       
@@ -335,7 +347,7 @@ I built this slider when I first started to learn JS, you can rebuild it with mo
     <div class="Franquicia">
       <div class="Info">
           <div class="SobreNosotros">
-              <img src="imagenes/fff2dd31e4a1b4ddcb459d65b3ae3d67.jpg" alt="Imagen">
+              <img src="imagenes/fff2dd31e4a1b4ddcb459d65b3ae3d67.png" alt="Imagen">
           </div>
           
           <button class="botonMas2">Más</button>
@@ -424,7 +436,10 @@ I built this slider when I first started to learn JS, you can rebuild it with mo
             </div>
         </div>
     </footer>
-    
+    <div id="floating-cart" class="floating-cart" onclick="window.location.href='../Carrito/Carrito.html'">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <span id="cart-bubble" class="cart-bubble"></span>
+    </div>
 </body>
 
 <script type="text/javascript">

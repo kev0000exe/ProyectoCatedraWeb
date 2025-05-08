@@ -1277,6 +1277,18 @@ body {
    
 }
 
+.fondoBlanco{
+
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 410px;
+    border-radius: 20px;
+    left: 1090px;
+    z-index: 200;
+    background-color: #ffffff;
+}
+
 .ComidaChef{
     display: flex;
     justify-content: center;
@@ -1346,7 +1358,9 @@ body {
 }
 
 .boxBlack{
-    margin-top: 800px;
+    background: none;
+    margin-top: 300px;
+    
 }
 
 
@@ -1387,6 +1401,11 @@ body {
 .boton-grupo-unico {
     display: flex;
     gap: 10px; /* Espaciado entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-left: 650%;
+    margin-top: 600px;
+    border-bottom: 2px solid #ffffff; /* Estilo de borde corregido */
+    z-index: 20;
 }
 
 /* Botón de iniciar sesión */
@@ -1513,7 +1532,7 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     width: 1500px;
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: column; /* Asegura que el video esté arriba y el texto abajo */
     border-radius: 20px;
@@ -1535,6 +1554,62 @@ body {
     height: 100%;
     object-fit: cover; /* Ajusta el video para llenar el espacio */
 }
+
+
+
+.motorista{
+    position: relative; /* Asegura que los elementos hijos con posición absoluta se posicionen dentro de este contenedor */
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: auto; /* Ajusta la altura según el contenido */
+    overflow: hidden; /* Evita que los elementos hijos se salgan del contenedor */
+    top: -300px;
+    left: 280px;
+}
+
+
+
+.textoInfoDelivery3{
+    position: absolute;
+    display: flex;
+    right: 200px;
+
+   height: 100px;
+   width: 720px;
+
+   
+}
+/* Contenedor padre */
+.contenedorMotorista {
+    position: absolute;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .llevamos2{
+     display: flex;
+     position: relative;
+     right: 150px;
+        top: -70px;
+        margin: auto;
+ }
+ 
+ .textoInfoDelivery{
+    display: flex;
+    position: relative;
+     right: 300px;
+     top: -50px;
+     
+ }
+ 
+
+
+
+
+
+
 .infoDelivery2{
     border-top: none;
     border-right: none;
@@ -1562,7 +1637,7 @@ body {
     justify-content: end;
 }
 
-.Carta{
+.Carta {
     margin-top: 20px;
     background: #ffffff;
     width: 48%;
@@ -1571,7 +1646,6 @@ body {
     box-shadow: 0 4px 14px #000;
     position: relative; /* Para posicionar el video dentro */
     overflow: hidden; /* Evita que el video sobresalga */
-    
 }
 
 .Menu{
@@ -1581,7 +1655,7 @@ body {
     border-radius: 25px;
     
 }
-.videoCarta{
+.videoCarta {
     position: absolute;
     top: 0;
     left: 0;
@@ -1589,6 +1663,7 @@ body {
     height: 100%;
     object-fit: cover; /* Asegura que el video llene el contenedor */
     border-radius: inherit; /* Mantiene los bordes redondeados */
+    z-index: 1; /* Asegura que el video esté visible */
 }
 .InfoCarta{
     display: block;
@@ -1753,15 +1828,49 @@ body {
 
 
 
-
-
-
 #end{
     background-color: black;
 }
 
 
 
+/* Estilo para el contenedor flotante */
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    margin-bottom: 50px;
+    right: 20px;
+    background-image: url(../Carta/Imagenes/Carrito.png);
+    background-size: cover;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Estilo para la burbuja */
+  .cart-bubble {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
 @media (max-width: 1200px) { 

@@ -200,99 +200,103 @@
 }
 
 /* ************* NAVBAR ************* */
-.navbar container {
-	background-color: #000;
+.navbar_container {
+  background-color: #ffffff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .navbar .fa-bars {
-	display: none;
+  display: none;
 }
 
 .menu {
-	display: flex;
-	gap: 2rem;
+  display: flex;
+  background-color: #ffffff;
+  gap: 2rem;
 }
 
 .menu li {
-	list-style: none;
+  list-style: none;
 }
 
 .menu a {
-	text-decoration: none;
-	font-size: 1.3rem;
-	color: var(--dark-color);
-	font-weight: 600;
-	text-transform: uppercase;
-	position: relative;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--dark-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .menu a::after {
-	content: '';
-	width: 1.5rem;
-	height: 1px;
-	background-color: #fff;
-	position: absolute;
-	bottom: -3px;
-	left: 50%;
-	transform: translate(-50%, 50%);
-	opacity: 0;
-	transition: all 0.3s ease;
+  content: '';
+  width: 1.5rem;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .menu a:hover::after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .menu a:hover {
-	color: #fff;
+  color: #fff;
 }
 
 .search-form {
-	position: relative;
-	display: flex;
-	align-items: center;
-	border: 2px solid #fff;
-	border-radius: 2rem;
-	background-color: #fff;
-	height: 4.4rem;
-	overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  background-color: #fff;
+  height: 4.4rem;
+  overflow: hidden;
 }
 
 .search-form input {
-	outline: none;
-	font-family: inherit;
-	border: none;
-	width: 25rem;
-	font-size: 1.4rem;
-	padding: 0 2rem;
-	color: #777;
-	cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  border: none;
+  width: 25rem;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  color: #777;
+  cursor: pointer;
 }
 
 .search-form input::-webkit-search-cancel-button {
-	appearance: none;
+  appearance: none;
 }
 
 .search-form .btn-search {
-	border: none;
-	background-color: var(--primary-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	padding: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
 }
 
 .btn-search i {
-	font-size: 2rem;
-	color: #fff;
+  font-size: 2rem;
+  color: #fff;
 }
 
 
@@ -302,22 +306,36 @@
 
 
 
+.video-container {
+  position: relative;
+  height: 100vh; /* hace que el contenedor tenga el alto de la ventana */
+  overflow: hidden;
+  width :  100%;
+}
+
 #Menu2{
-    position: fixed;
-    justify-content: left;
+  position: sticky; /* Hace que el video se quede fijo hasta cierto punto */
+  top: 0;
     background-position: left top; /* Alinea la imagen a la izquierda arriba */
     height: 1200px;
     background-repeat: no-repeat;
     width :  50%;
-    margin: 20px;
+   z-index: 1; /* Asegura que el video esté por encima de otros elementos */
     margin: 0;
     
     overflow: hidden;
-    background-attachment: fixed;
+
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    background-position: center; /* Centra la imagen */
+    animation: scrollEffect 10s infinite; /* Aplica la animación */
     
     
 }
 
+.cof{
+  position: fixed
+}
 
 /*Botones de la carta*/
 .cta {
@@ -389,6 +407,11 @@
     background: #ffffff;
     border-radius: 25px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Opcional: agrega una sombra para destacar las tarjetas */
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0;
 }
 
   
@@ -455,7 +478,13 @@ body::before {
     pointer-events: none; /* Evita que interfiera con el contenido */
 }
 
-
+.master{
+ position: absolute;
+ display: flex;
+ left: -60px;
+ margin: 0;
+ top: 120px;
+}
 
 .cartaOpciones{
     
@@ -470,13 +499,14 @@ body::before {
     top: 80px;
     left: 765px;
     height: 3300px;
-    width: 65%;
+    width: 59%;
     border-radius: 20px;
 }
 .contenedor-principal {
     display: flex;
     align-items: flex-start;
     position: relative;
+    flex: 1;
   }
 
 .Yavi{
@@ -534,13 +564,66 @@ position: static;
     text-align: left;
     margin-top: 50px;
 }
+.InfoCarta33{
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  right: 10px;
+}
 .InfoCarta2{
     
-   
-   
+  
     width: 600px;
     height: 200px;
     display: block;
     margin: auto;
+    margin-top: 50px;
     
+}
+#end{
+  margin-top: 132%;
+  position: relative; /* Asegura que el footer tenga un contexto de apilamiento */
+  z-index: 10; /* Coloca el footer por encima del video */
+  background-color: #000; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Estilo para el contenedor flotante */
+.floating-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: url(Imagenes/Carrito.png);
+  background-size: cover;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Estilo para la burbuja */
+.cart-bubble {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

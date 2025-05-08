@@ -74,7 +74,7 @@
   
     <!-- Menú principal -->
     <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
+      <li><a href="../PaginInicio/index.html">Inicio</a></li>
       <li><a href="../login/Login.html">Login</a></li>
       <li><a href="#">Mapa</a></li>
       <li><a href="../Carta/Carta.html">Menu</a></li>
@@ -86,96 +86,49 @@
     <form class="search-form">
       <input type="search" placeholder="Buscar..." />
       <button class="btn-search">
-        <i class="fa-solid 
-        fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
   
   </nav>
+  
+  <!-- Contenido principal -->
+  <div class="paginaPrincipal"></div>
 
+  <!-- React app -->
+  <div id="root"></div>
 
-
-  <div class="paginaPrincipal">
-
-
-    
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer class=" text-light py-4" id="end">
+  <!-- Footer -->
+  <footer class="text-light py-4" id="end">
     <div class="container">
-        <div class="row">
-            <!-- Logo y derechos -->
-            <div class="col-md-3 d-flex align-items-center">
-                <img src="https://img.freepik.com/vector-premium/logo-cafeteria-taza-cafe-sobre-fondo-negro_447549-705.jpg" alt="Logo" width="40" class="cafe">
-                <span class="ms-2">© 2025</span>
-            </div>
-            <!-- Sección de enlaces -->
-            <div class="col-md-3">
-                <h5 class="text-uppercase">Section</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5 class="text-uppercase">Section</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5 class="text-uppercase">Section</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-3 d-flex align-items-center">
+          <img src="https://img.freepik.com/vector-premium/logo-cafeteria-taza-cafe-sobre-fondo-negro_447549-705.jpg" alt="Logo" width="40" class="cafe" />
+          <span class="ms-2">© 2025</span>
         </div>
+        <!-- Repetir secciones -->
+        <div class="col-md-3" repeat="3">
+          <h5 class="text-uppercase">Section</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Features</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
+            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-light text-decoration-none">About</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
+
+  <!-- Scripts: React, ReactDOM, Babel -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Tu app JSX -->
+  <script type="text/babel" src="app.js"></script>
 
 </body>
-
-<script type="text/javascript">
-(function(d, t) {
-  var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  v.onload = function() {
-    window.voiceflow.chat.load({
-      verify: { projectID: '67f721e795c558b7d60ab443' },
-      url: 'https://general-runtime.voiceflow.com',
-      versionID: 'production',
-      voice: {
-        url: "https://runtime-api.voiceflow.com"
-      }
-    });
-  }
-  v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-})(document, 'script');
-</script>
-
-<script src="script.js"></script>
-
 </html>

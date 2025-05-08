@@ -343,4 +343,3 @@ C:\Users\gamer\OneDrive\Escritorio\ProyectoProgra\TiendasApi\TiendasApi\bin\Debu
 C:\Users\gamer\OneDrive\Escritorio\ProyectoProgra\TiendasApi\TiendasApi\bin\Debug\net8.0\TiendasApi.staticwebassets.endpoints.json
 C:\Users\gamer\OneDrive\Escritorio\ProyectoProgra\TiendasApi\TiendasApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\gamer\OneDrive\Escritorio\ProyectoProgra\TiendasApi\TiendasApi\obj\Debug\net8.0\staticwebassets\msbuild.TiendasApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\gamer\OneDrive\Escritorio\ProyectoProgra\TiendasApi\TiendasApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
