@@ -1,6 +1,6 @@
 # ProyectoCatedraWeb
 
-
+ELIMINAR LA TiendasDbContext EN LA CARPETA DATA Y OCUPAR NET 8
 
 Para poder conectar una base de datos a nuestro proyecto tiene que tener una base de datos con el siguiente nombre CafeAirRodCoffe 
 # TiendasAPI
