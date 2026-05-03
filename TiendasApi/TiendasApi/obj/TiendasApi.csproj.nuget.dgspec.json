@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {}
+    "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {
+    "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+        "projectUniqueName": "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
         "projectName": "TiendasApi",
-        "projectPath": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
-        "packagesPath": "C:\\Users\\gamer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamer\\OneDrive\\Escritorio\\ProyectoProgra\\TiendasApi\\TiendasApi\\obj\\",
+        "projectPath": "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+        "packagesPath": "C:\\Users\\Kevin Menjivar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kevin Menjivar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

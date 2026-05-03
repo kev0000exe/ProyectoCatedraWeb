@@ -6,29 +6,30 @@ using System.Text;
 using TiendasAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// --- 1. CONFIGURACIÓN DE SERVICIOS ---
+
 builder.Services.AddScoped<JwtService>();
 
-
-// 🔑 Leer configuración JWT desde appsettings.json
+// 🔑 Configuración de JWT desde appsettings.json
 var jwtConfig = builder.Configuration.GetSection("Jwt");
 
-// 🔌 Configuración de cadena de conexión
+// 🔌 Cadena de conexión a SQL Server
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// 🧩 Agrega servicios
+// 🧩 Controladores y configuración de JSON
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
     });
 
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 🔐 Configuración de JWT
+// 🔐 Seguridad: Autenticación JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -47,20 +48,44 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// 🌍 CORS para permitir peticiones del frontend
+// 🌍 Política de CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", builder =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
 });
 
 var app = builder.Build();
 
-// 🧪 Swagger solo en desarrollo
+// --- 2. BLOQUE DE AUTOCREACIÓN DE BASE DE DATOS ---
+// Este código activa la base de datos automáticamente sin comandos de terminal.
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<ApplicationDbContext>();
+        // Crea la base de datos y las tablas si no existen
+        context.Database.EnsureCreated();
+        Console.WriteLine("**********************************************************");
+        Console.WriteLine("✅ PROYECTO LISTO: Base de datos CafeAirRodCoffe activada.");
+        Console.WriteLine("**********************************************************");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("**********************************************************");
+        Console.WriteLine("❌ ERROR DE CONEXIÓN: " + ex.Message);
+        Console.WriteLine("Asegúrate de que SQL Server esté corriendo.");
+        Console.WriteLine("**********************************************************");
+    }
+}
+
+// --- 3. CONFIGURACIÓN DEL PIPELINE (MIDDLEWARES) ---
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -69,12 +94,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// 🔐 Middlewares de seguridad
 app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
-// 🗺️ Mapear controladores
 app.MapControllers();
 
 app.Run();

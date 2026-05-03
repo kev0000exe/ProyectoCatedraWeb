@@ -1,499 +1,275 @@
-/*Codigo para la Carta o menu */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-/* ********************************** */
-/*               HEADER               */
-/* ********************************** */
 
-
-
-/* Boton para soporte*/
-
-/* From Uiverse.io by gagan-gv */ 
-/* From Uiverse.io by gagan-gv */ 
-/* From Uiverse.io by gagan-gv */ 
-.btn {
-    
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    background-color: #eeeeed;
-    border-radius: 80px;
-    border: none;
-    padding: 0 80px;
-    transition: all .2s ease;
-    justify-content: center;
-    align-items: center;
-   }
-   
-   .btn:hover {
-    transform: scale(1.1);
-   }
-   
-   .btn span {
-    position: absolute;
-    z-index: 99;
-    width: 150px;
-    height: 50px;
-    border-radius: 80px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    font-size: 17px;
-    text-align: center;
-    line-height: 50px;
-    letter-spacing: 2px;
-    color: #eeeeed;
-    background-color: #1f1f1f;
-    padding: 0 10px;
-    transition: all 1.2s ease;
-   }
-   
-   .btn .container {
-    display: flex;
-    width: 150px;
-    border-radius: 80px;
-    line-height: 50px;
-   }
-   
-   .btn svg {
-    padding: 0 5px;
-    opacity: 0;
-   }
-   
-   .btn .container svg:nth-of-type(1) {
-    transition-delay: 0.65s;
-   }
-   
-   .btn .container svg:nth-of-type(2) {
-    transition-delay: 0.8s;
-   }
-   
-   .container svg:nth-of-type(3) {
-    transition-delay: 0.5s;
-   }
-   
-   .btn:hover span {
-    opacity: 0;
-   }
-   
-   .btn:hover svg {
-    opacity: 1;
-   }
-  
-  
-/*Carrito */
-/* From Uiverse.io by JaydipPrajapati1910 */ 
-/* Botón Checkout personalizado, sin conflictos */
-.btn-checkout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
-    gap: 15px;
-    background-color: #181717;
-    outline: 3px #181717 solid;
-    outline-offset: -3px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: 400ms;
-  }
-  
-  .btn-checkout .texto-checkout {
-    color: white;
-    font-weight: 700;
-    font-size: 1em;
-    transition: 400ms;
-  }
-  
-  .btn-checkout svg path {
-    transition: 400ms;
-  }
-  
-  .btn-checkout:hover {
-    background-color: transparent;
-  }
-  
-  .btn-checkout:hover .texto-checkout {
-    color: #181717;
-  }
-  
-  .btn-checkout:hover svg path {
-    fill: #181717;
-  }
-  
-
-
-
-
-
-
-
-.container-hero {
-	background-color: #ffffff;
-}
-
-.hero {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem 0;
-}
-
-.customer-support {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-}
-
-.customer-support i {
-	font-size: 3.3rem;
-}
-
-.content-customer-support {
-	display: flex;
-	flex-direction: column;
-}
-
-.container-logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-}
-
-.container-logo i {
-	font-size: 3rem;
-}
-
-.container-logo h1 a {
-	text-decoration: none;
-	color: #000;
-	font-size: 3rem;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-}
-
-.container-user {
-	display: flex;
-	gap: 1rem;
-	cursor: pointer;
-}
-
-.container-user .fa-user {
-	font-size: 3rem;
-	color: var(--primary-color);
-	padding-right: 2.5rem;
-	border-right: 1px solid #000000;
-}
-
-.container-user .fa-basket-shopping {
-	font-size: 3rem;
-	color: var(--primary-color);
-	padding-left: 1rem;
-}
-
-.content-shopping-cart {
-	display: flex;
-	flex-direction: column;
-}
-
-/* ************* NAVBAR ************* */
-.navbar_container {
-  background-color: #ffffff;
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.navbar .fa-bars {
-  display: none;
-}
-
-.menu {
-  display: flex;
-  background-color: #ffffff;
-  gap: 2rem;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.menu a {
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: var(--dark-color);
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.menu a::after {
-  content: '';
-  width: 1.5rem;
-  height: 1px;
-  background-color: #ffffff;
-  position: absolute;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.menu a:hover::after {
-  opacity: 1;
-}
-
-.menu a:hover {
-  color: #fff;
-}
-
-.search-form {
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: 2px solid #fff;
-  border-radius: 2rem;
-  background-color: #fff;
-  height: 4.4rem;
-  overflow: hidden;
-}
-
-.search-form input {
-  outline: none;
-  font-family: inherit;
-  border: none;
-  width: 25rem;
-  font-size: 1.4rem;
-  padding: 0 2rem;
-  color: #777;
-  cursor: pointer;
-}
-
-.search-form input::-webkit-search-cancel-button {
-  appearance: none;
-}
-
-.search-form .btn-search {
-  border: none;
-  background-color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 1rem;
-}
-
-.btn-search i {
-  font-size: 2rem;
-  color: #fff;
-}
-
-
-
-
-
-
-
-
-.video-container {
-  position: relative;
-  height: 100vh; /* hace que el contenedor tenga el alto de la ventana */
-  overflow: hidden;
-  width :  100%;
-}
-
-#Menu2{
-  position: sticky; /* Hace que el video se quede fijo hasta cierto punto */
-  top: 0;
-    background-position: left top; /* Alinea la imagen a la izquierda arriba */
-    height: 1200px;
-    background-repeat: no-repeat;
-    width :  50%;
-   z-index: 1; /* Asegura que el video esté por encima de otros elementos */
-    margin: 0;
-    
-    overflow: hidden;
-
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-attachment: fixed; /* Fija la imagen al fondo */
-    background-position: center; /* Centra la imagen */
-    animation: scrollEffect 10s infinite; /* Aplica la animación */
-    
-    
-}
-
-.cof{
-  position: fixed
-}
-
-/*Botones de la carta*/
-.cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #c1aa94;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-  }
-  
-  .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #000000;
-  }
-  
-  .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #000000;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-  }
-  
-  .cta:hover:before {
-    width: 100%;
-    background: #c1aa94;
-  }
-  
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-  
-  .cta:active {
-    transform: scale(0.95);
-  }
-  .card{
-    width: 22rem; /* Aumenta el ancho de las tarjetas */
-    background: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Opcional: agrega una sombra para destacar las tarjetas */
-}
-  
-.body{
-    width: 22rem; /* Aumenta el ancho de las tarjetas */
-    background: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Opcional: agrega una sombra para destacar las tarjetas */
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    margin: 0;
-}
-
-  
-.card .btn {
-    display: block; /* Convierte el botón en un elemento de bloque */
-    margin: 10px auto; /* Centra el botón horizontalmente */
-    border-top: none; /* Quita el borde superior */
-    border-right: none; /* Quita el borde derecho */
-    border-left: none; /* Quita el borde izquierdo */
-    border-radius: 0; /* Opcional: elimina los bordes redondeados */
-    text-align: center; /* Asegura que el texto del botón esté centrado */
-}
-
-.button-container {
-    
-   margin-left: 20%;
-}
-.card img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 220px; /* Ajusta la altura de las imágenes */
-    object-fit: cover; /* Mantiene las proporciones de la imagen y recorta si es necesario */
-    border-radius: 10px; /* Opcional: agrega bordes redondeados */
-}
-
-
-.cof{
-    position: fixed;
-    justify-content: left;
-    background-position: left top; /* Alinea la imagen a la izquierda arriba */
-    height: 1200px;
-    background-repeat: no-repeat;
-    width :  50%;
-    margin: 20px;
-    margin: 0;
-    
-    overflow: hidden;
-    background-attachment: fixed;
-}
-
-
-  
-.Footer2{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
+/* =========================================
+   1. GLOBALES Y FONDO
+========================================= */
 body {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    background-color: #ffffff; /* Color base del fondo */
+    position: relative;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-body::before {
-    content: ""; /* Crea un pseudo-elemento vacío */
-    position: fixed; /* Fija el fondo en la pantalla */
-    top: 0;
-    left: 0;
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, #4b3621); /* De negro a café */
+        z-index: -1;
+        pointer-events: none;
+    }
+
+
+/* =========================================
+   2. HEADER SUPERIOR (.container-hero) NUEVO
+========================================= */
+.container-hero {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 20px;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.customer-support, .container-logo, .container-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .customer-support i, .container-user i.fa-user {
+        font-size: 2.5rem;
+        color: #6b4c2a;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+        .container-user i.fa-user:hover {
+            color: #1a1a1a;
+        }
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+}
+
+    .content-customer-support .text {
+        font-size: 11px;
+        color: #888;
+    }
+
+    .content-customer-support .number {
+        font-size: 13px;
+        font-weight: 600;
+        color: #333;
+    }
+
+.container-logo h1 a, .logo a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/* =========================================
+   3. BARRA DE NAVEGACIÓN PRINCIPAL NUEVO
+========================================= */
+.navbar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -6px #222;
+    position: relative;
+    max-width: 100%;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2.5rem;
+}
+
+    .menu li a {
+        text-decoration: none;
+        color: #1a1a1a;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .menu a::after {
+        content: '';
+        width: 1.5rem;
+        height: 1px;
+        background-color: #6b4c2a;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu a:hover::after {
+        opacity: 1;
+    }
+
+    .menu a:hover {
+        color: #6b4c2a;
+    }
+
+.search-form {
+    display: flex;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 38px;
+    margin-left: 2rem;
+    background-color: white;
+}
+
+    .search-form input {
+        border: none;
+        padding: 0 15px;
+        outline: none;
+        font-family: inherit;
+        font-size: 13px;
+        width: 20rem;
+    }
+
+    .search-form .btn-search {
+        border: none;
+        background: none;
+        padding: 0 15px;
+        color: #6b4c2a;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+.fa-bars {
+    display: none;
+    font-size: 1.8rem;
+    color: #6b4c2a;
+    cursor: pointer;
+}
+
+/* =========================================
+   4. BOTÓN CHECKOUT NUEVO
+========================================= */
+.btn-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #6b4c2a;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(107, 76, 42, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+    .btn-checkout:hover {
+        background-color: #1a1a1a;
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+.texto-checkout {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.icono-checkout {
+    transition: transform 0.3s ease;
+}
+
+.btn-checkout:hover .icono-checkout {
+    transform: scale(1.15);
+}
+
+
+/* =========================================
+   5. DISEÑO PRINCIPAL (Video y Carta)
+========================================= */
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #000000, #4b3621); /* De negro a café */
-    z-index: -1; /* Envía el pseudo-elemento al fondo */
-    pointer-events: none; /* Evita que interfiera con el contenido */
 }
 
-.master{
- position: absolute;
- display: flex;
- left: -60px;
- margin: 0;
- top: 120px;
+#Menu2 {
+    position: sticky;
+    top: 0;
+    background-position: left top;
+    height: 1200px;
+    background-repeat: no-repeat;
+    width: 50%;
+    z-index: 1;
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: scrollEffect 10s infinite;
 }
 
-.cartaOpciones{
-    
+.cof {
+    position: fixed;
+    background-position: left top;
+    height: 1200px;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.contenedor-principal {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.master {
+    position: absolute;
+    display: flex;
+    left: -60px;
+    margin: 0;
+    top: 120px;
+}
+
+.cartaOpciones {
     overflow-y: auto;
     position: absolute;
-   
     background: rgb(255, 255, 255);
-  
- 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     margin: 0;
     top: 80px;
@@ -502,128 +278,403 @@ body::before {
     width: 59%;
     border-radius: 20px;
 }
-.contenedor-principal {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    flex: 1;
-  }
 
-.Yavi{
-width: 450px;
-height: 500px;
-background: #ffffff;
-border-radius: 25px;
-
-margin-top: 120px;
-margin-left: 200px;
-/*
-box-shadow: 0 4px 15px #000;
-*/
-
-display: flex;
-position: static;
-
-}
-.ContainerYavi{
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 21px;
-    width: 450px;
-    height: 500px;
-    background: #ffffff;
-    border-radius: 25px;
-    margin-top: 10%;
-  
-    margin-left: 200px;
-
-    position: static;
-   
-}
-
-.container mt-5{
-    margin: 0;
-}
-.row {
-    display: flex; /* Activa Flexbox */
-    flex-wrap: wrap; /* Permite que las cartas se ajusten en filas */
-    justify-content: center; /* Centra las cartas horizontalmente */
-    gap: 20px; /* Espacio entre las cartas */
-   
-}
-
-.card {
-    width: 18rem; /* Asegura que todas las cartas tengan el mismo ancho */
-    background: #ffffff;
-    border-radius: 25px;
-    
-}
-
-.InfoCarta3{
-    text-align: left;
-    margin-top: 50px;
-}
-.InfoCarta33{
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  right: 10px;
-}
-.InfoCarta2{
-    
-  
+.InfoCarta2 {
     width: 600px;
     height: 200px;
     display: block;
     margin: auto;
     margin-top: 50px;
-    
-}
-#end{
-  margin-top: 132%;
-  position: relative; /* Asegura que el footer tenga un contexto de apilamiento */
-  z-index: 10; /* Coloca el footer por encima del video */
-  background-color: #000; /* Color de fondo del footer */
-  color: #fff; /* Color del texto */
-  padding: 20px;
-  text-align: center;
 }
 
+.InfoCarta3 {
+    text-align: left;
+    margin-top: 50px;
+}
 
-/* Estilo para el contenedor flotante */
+.InfoCarta33 {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    right: 10px;
+}
+
+/* =========================================
+   6. TARJETAS (Cafés)
+========================================= */
+.Yavi, .ContainerYavi {
+    width: 450px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 25px;
+    margin-top: 120px;
+    margin-left: 200px;
+    display: flex;
+    position: static;
+}
+
+.ContainerYavi {
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-top: 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 22rem;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+.button-container {
+    margin-left: 20%;
+}
+
+/* =========================================
+   7. CARRITO FLOTANTE
+========================================= */
 .floating-cart {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-image: url(Imagenes/Carrito.png);
-  background-size: cover;
-  color: white;
-  font-size: 24px;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6b4c2a;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Estilo para la burbuja */
+    .floating-cart:hover {
+        transform: scale(1.1);
+        background-color: #4a341d;
+    }
+
 .cart-bubble {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: red;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e74c3c;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* =========================================
+   8. FOOTER
+========================================= */
+.Footer2 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#end {
+    margin-top: 132%;
+    position: relative;
+    z-index: 10;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================================
+   9. RESPONSIVE DESIGN (MÓVILES Y TABLETS)
+========================================= */
+@media (max-width: 900px) {
+    .fa-bars {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1rem 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        text-align: center;
+        z-index: 1000;
+    }
+
+        .menu.active {
+            display: flex;
+        }
+
+    .search-form {
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ocultar elementos de PC */
+    .video-container, #Menu2, .cof {
+        display: none !important;
+    }
+
+    /* Header */
+    .hero {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        padding: 20px 10px !important;
+        text-align: center;
+    }
+
+    .customer-support, .container-logo, .container-user {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    /* Navbar */
+    .navbar_container {
+        padding: 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+
+    .menu {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px 25px !important;
+        width: 100% !important;
+        position: relative !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+    }
+
+        .menu li {
+            margin: 0 !important;
+        }
+
+            .menu li a {
+                font-size: 14px !important;
+                letter-spacing: 1px;
+            }
+
+    .search-form {
+        width: 100% !important;
+        max-width: 350px !important;
+        margin: 5px 0 0 0 !important;
+        height: 40px !important;
+    }
+
+        .search-form input {
+            width: 100% !important;
+        }
+
+    /* Carta y Textos */
+    .contenedor-principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .cartaOpciones {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px 10px !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .InfoCarta2 {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto 30px auto !important;
+        padding: 0 15px !important;
+    }
+
+    .InfoCarta33 {
+        position: relative !important;
+        top: 0 !important;
+        right: 0 !important;
+        text-align: center !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        padding: 0 !important;
+    }
+
+    /* Tarjetas de Café */
+    .master {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .Yavi, .ContainerYavi {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+    }
+
+    .row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 0 !important;
+        gap: 25px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+    }
+
+    .card-body {
+        text-align: center !important;
+    }
+
+    .button-container {
+        margin: 15px 0 0 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    /* Extras Móviles */
+    .floating-cart {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    #end {
+        margin-top: 40px !important;
+    }
+}
+
+/* =========================================
+   9. RESPONSIVE DESIGN (MÓVILES Y TABLETS)
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* ... aquí arriba están tus reglas móviles para el menú y el texto ... */
+
+    /* Tarjetas de Café (SOLO PARA TELÉFONOS) */
+    .master {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .Yavi, .ContainerYavi {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .row {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 0 !important;
+        gap: 35px !important;
+        width: 100% !important;
+    }
+
+    .col-md-6 {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+    }
+
+    .card-body {
+        text-align: center !important;
+    }
+
+    .button-container {
+        margin: 15px 0 0 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+/* <--- ESTA LLAVE CIERRA LA VERSIÓN DE CELULARES, PROTEGIENDO TU PC */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

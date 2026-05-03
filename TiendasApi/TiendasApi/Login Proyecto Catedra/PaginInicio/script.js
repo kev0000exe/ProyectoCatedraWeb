@@ -1,7 +1,8 @@
-// vars
-'use strict'
-var	testim = document.getElementById("testim"),
-		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+'use strict';
+
+// Seleccionamos los elementos del DOM
+var testim = document.querySelector('.testim-wrap'), // Contenedor para gestos táctiles
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
     testimLeftArrow = document.getElementById("left-arrow"),
     testimRightArrow = document.getElementById("right-arrow"),
@@ -9,15 +10,14 @@ var	testim = document.getElementById("testim"),
     currentSlide = 0,
     currentActive = 0,
     testimTimer,
-		touchStartPos,
-		touchEndPos,
-		touchPosDiff,
-		ignoreTouch = 30;
-;
+    touchStartPos,
+    touchEndPos,
+    touchPosDiff,
+    ignoreTouch = 30;
 
-window.onload = function() {
+window.onload = function () {
 
-    // Testim Script
+    // --- LÓGICA DE TESTIMONIOS ---
     function playSlide(slide) {
         for (var k = 0; k < testimDots.length; k++) {
             testimContent[k].classList.remove("active");
@@ -26,7 +26,7 @@ window.onload = function() {
         }
 
         if (slide < 0) {
-            slide = currentSlide = testimContent.length-1;
+            slide = currentSlide = testimContent.length - 1;
         }
 
         if (slide > testimContent.length - 1) {
@@ -34,143 +34,125 @@ window.onload = function() {
         }
 
         if (currentActive != currentSlide) {
-            testimContent[currentActive].classList.add("inactive");            
+            testimContent[currentActive].classList.add("inactive");
         }
         testimContent[slide].classList.add("active");
         testimDots[slide].classList.add("active");
 
         currentActive = currentSlide;
-    
+
         clearTimeout(testimTimer);
-        testimTimer = setTimeout(function() {
+        testimTimer = setTimeout(function () {
             playSlide(currentSlide += 1);
-        }, testimSpeed)
+        }, testimSpeed);
     }
 
-    testimLeftArrow.addEventListener("click", function() {
+    testimLeftArrow.addEventListener("click", function () {
         playSlide(currentSlide -= 1);
-    })
+    });
 
-    testimRightArrow.addEventListener("click", function() {
+    testimRightArrow.addEventListener("click", function () {
         playSlide(currentSlide += 1);
-    })    
+    });
 
-    for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function() {
-            playSlide(currentSlide = testimDots.indexOf(this));
-        })
-    }
+    testimDots.forEach((dot, index) => {
+        dot.addEventListener("click", function () {
+            playSlide(currentSlide = index);
+        });
+    });
 
     playSlide(currentSlide);
 
-    // keyboard shortcuts
-    document.addEventListener("keyup", function(e) {
+    // --- ATAJOS DE TECLADO ---
+    document.addEventListener("keyup", function (e) {
         switch (e.keyCode) {
-            case 37:
+            case 37: // Flecha Izquierda
                 testimLeftArrow.click();
                 break;
-                
-            case 39:
+            case 39: // Flecha Derecha
                 testimRightArrow.click();
-                break;
-
-            case 39:
-                testimRightArrow.click();
-                break;
-
-            default:
                 break;
         }
-    })
-		
-		testim.addEventListener("touchstart", function(e) {
-				touchStartPos = e.changedTouches[0].clientX;
-		})
-	
-		testim.addEventListener("touchend", function(e) {
-				touchEndPos = e.changedTouches[0].clientX;
-			
-				touchPosDiff = touchStartPos - touchEndPos;
-			
-				console.log(touchPosDiff);
-				console.log(touchStartPos);	
-				console.log(touchEndPos);	
+    });
 
-			
-				if (touchPosDiff > 0 + ignoreTouch) {
-						testimLeftArrow.click();
-				} else if (touchPosDiff < 0 - ignoreTouch) {
-						testimRightArrow.click();
-				} else {
-					return;
-				}
-			
-		})
-}
-document.body.classList.add("light-theme");
+    // --- GESTOS TÁCTILES (SWIPE) ---
+    testim.addEventListener("touchstart", function (e) {
+        touchStartPos = e.changedTouches[0].clientX;
+    });
 
-document.getElementById("theme-toggle").addEventListener("click", () => {
-	document.body.classList.toggle("dark-theme");
-	document.body.classList.toggle("light-theme");
-});
+    testim.addEventListener("touchend", function (e) {
+        touchEndPos = e.changedTouches[0].clientX;
+        touchPosDiff = touchStartPos - touchEndPos;
 
-// Duplicate cards for infinite scroll loop
-const track = document.getElementById("cards-track");
-track.innerHTML += track.innerHTML;
+        // Si el valor es positivo, deslizó a la izquierda -> Siguiente
+        if (touchPosDiff > ignoreTouch) {
+            testimRightArrow.click();
+        }
+        // Si el valor es negativo, deslizó a la derecha -> Anterior
+        else if (touchPosDiff < -ignoreTouch) {
+            testimLeftArrow.click();
+        }
+    });
 
+    // --- MAPA (Leaflet) ---
+    // Asegúrate de tener el CSS y JS de Leaflet en el <head>
+    if (document.getElementById('map')) {
+        var map = L.map('map').setView([40.7128, -74.0060], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+        L.marker([40.7128, -74.0060]).addTo(map).bindPopup('AirRodCoffe Store').openPopup();
 
-fetch("https://localhost:7151/api/usuarios/crearUsuario", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(usuario)
-})
-.then(response => response.json())
-.then(data => {
-    console.log('Usuario creado:', data);
-})
-.catch(error => {
-    console.error('Error al crear usuario:', error);
-});
-
-
-// Función para agregar productos al carrito
-function addToCart(product) {
-    // Obtener el carrito actual desde localStorage
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  
-    // Buscar si el producto ya existe en el carrito
-    const existing = cart.find(p => p.name === product.name);
-    if (existing) {
-      // Si el producto ya existe, incrementar su cantidad
-      existing.quantity += 1;
-    } else {
-      // Si el producto no existe, agregarlo con cantidad inicial de 1
-      cart.push({ ...product, quantity: 1 });
+        // Forzar renderizado correcto por si el contenedor estaba oculto
+        setTimeout(() => { map.invalidateSize(); }, 500);
     }
-  
-    // Guardar el carrito actualizado en localStorage
+};
+
+// --- CARRUSEL INFINITO (Duplicar tarjetas) ---
+const track = document.getElementById("cardsTrack");
+if (track) {
+    track.innerHTML += track.innerHTML;
+}
+
+// --- LÓGICA DEL CARRITO ---
+function addToCart(product) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(p => p.name === product.name);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
     localStorage.setItem("cart", JSON.stringify(cart));
-  
-    // Actualizar la burbuja del carrito
     updateCartBubble();
-  
-    // Mostrar una alerta opcional
-    alert("Producto agregado al carrito");
-  }
-  
-  // Función para actualizar la burbuja del carrito
-  function updateCartBubble() {
+    alert("¡Producto añadido! ☕");
+}
+
+function updateCartBubble() {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const cartCount = cart.reduce((sum, p) => sum + p.quantity, 0);
-  
-    const cartBubble = document.getElementById("cart-bubble");
+    const cartBubble = document.querySelector(".cart-bubble"); // Selecciona tu burbuja
+
     if (cartBubble) {
-      cartBubble.textContent = cartCount;
-      cartBubble.style.display = cartCount > 0 ? "flex" : "none";
+        cartBubble.textContent = cartCount;
+        cartBubble.style.display = cartCount > 0 ? "flex" : "none";
     }
-  }
-  
-  // Inicializar la burbuja del carrito al cargar la página
-  document.addEventListener("DOMContentLoaded", updateCartBubble);
+}
+
+// Inicializar burbuja al cargar
+document.addEventListener("DOMContentLoaded", updateCartBubble);
+
+// --- API FETCH (CREAR USUARIO) ---
+// Nota: 'usuario' debe estar definido para que esto no de error.
+function enviarUsuario(usuario) {
+    fetch("https://localhost:7151/api/usuarios/crearUsuario", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(usuario)
+    })
+        .then(response => response.json())
+        .then(data => console.log('Usuario creado:', data))
+        .catch(error => console.error('Error al crear usuario:', error));
+}

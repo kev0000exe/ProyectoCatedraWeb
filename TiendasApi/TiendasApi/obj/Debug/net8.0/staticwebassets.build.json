@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "WR7R+i2rh+7owrZjt7EPvj4E6KF0JJe9N9xKJGK+Hyc=",
-  "Source": "TiendasApi",
-  "BasePath": "_content/TiendasApi",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"KomkBwW829J6qldWzAWa2+YK3iPVKgLiZ7n8aT0+FS8=","Source":"TiendasApi","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
