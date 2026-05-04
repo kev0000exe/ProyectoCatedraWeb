@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirRodCoffe — Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../Mas/style.css">
+
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+
+
+                    <h1 class="logo"><a href="/">AirRodCoffe</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <a href="../Perfil/NuevoUsuario.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <button class="btn-checkout">
+                        <svg viewBox="0 0 16 16" class="icono-checkout" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                            <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                        </svg>
+                        <p class="texto-checkout">Buy Now</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar_container">
+        <i class="fa-solid fa-bars fa-bars" id="menu-icon"></i>
+
+
+        <ul class="menu" id="menu">
+            <li><a href="../PaginInicio/index.html">Inicio</a></li>
+            <li><a href="../login/Login.html">Login</a></li>
+            <li><a href="../mapa/mapa.html">Mapa</a></li>
+            <li><a href="../Carta/Carta.html">Menu</a></li>
+            <li><a href="../Mas/blog.html">Blog</a></li>
+
+            <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
+
+        </ul>
+
+        <form class="search-form">
+            <input type="search" placeholder="Buscar..." />
+            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+
+    <!-- ══ BANNER ══ -->
+    <section class="blog-banner">
+        <div class="banner-eyebrow">AirRodCoffe · Historias de café</div>
+        <h1>Nuestro <em>Blog</em></h1>
+        <p>Recetas, cultura cafetera, tips y mucho más</p>
+    </section>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+
+    </div>
+
+    <!-- ══ FILTERS ══ -->
+    <div class="filters-bar">
+
+    </div>
+
+    <!-- ══ FEATURED ══ -->
+    <section class="featured-section reveal">
+        <div class="featured-card">
+            <div class="featured-img">
+                <div class="featured-img-art">
+                    <!-- Decorative coffee SVG art -->
+                    <svg class="coffee-art" width="260" height="260" viewBox="0 0 260 260" fill="none">
+                        <circle cx="130" cy="130" r="100" stroke="rgba(196,168,130,0.2)" stroke-width="1" />
+                        <circle cx="130" cy="130" r="72" stroke="rgba(196,168,130,0.15)" stroke-width="1" />
+                        <circle cx="130" cy="130" r="44" stroke="rgba(196,168,130,0.25)" stroke-width="1" />
+                        <!-- cup -->
+                        <path d="M80 148 Q80 180 130 180 Q180 180 180 148 L170 110 H90 Z" fill="rgba(196,168,130,0.18)" stroke="rgba(196,168,130,0.5)" stroke-width="1.5" />
+                        <!-- saucer -->
+                        <ellipse cx="130" cy="182" rx="58" ry="10" fill="rgba(196,168,130,0.12)" stroke="rgba(196,168,130,0.35)" stroke-width="1" />
+                        <!-- handle -->
+                        <path d="M180 125 Q210 125 210 145 Q210 165 180 165" fill="none" stroke="rgba(196,168,130,0.5)" stroke-width="1.5" />
+                        <!-- coffee surface -->
+                        <ellipse cx="130" cy="115" rx="38" ry="8" fill="rgba(196,168,130,0.2)" />
+                        <!-- steam -->
+                        <path d="M112 105 Q107 92 112 80 Q117 68 112 56" fill="none" stroke="rgba(196,168,130,0.4)" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M130 102 Q125 89 130 77 Q135 65 130 53" fill="none" stroke="rgba(196,168,130,0.5)" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M148 105 Q143 92 148 80 Q153 68 148 56" fill="none" stroke="rgba(196,168,130,0.4)" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="feat-label-wrap">
+                    <span class="cat-pill featured">Destacado</span>
+                    <span class="cat-pill">Recetas</span>
+                </div>
+            </div>
+            <div class="featured-body">
+                <div class="art-meta">
+                    <span class="cat">Recetas</span>
+                    <span class="dot"></span>
+                    <span>12 min lectura</span>
+                    <span class="dot"></span>
+                    <span>1 mayo 2026</span>
+                </div>
+                <h2 class="art-title">El secreto detrás de un<br><em>espresso perfecto</em></h2>
+                <p class="art-excerpt">
+                    Desde la selección del grano hasta la presión exacta de extracción, te revelamos cada detalle que transforma una taza ordinaria en una experiencia inolvidable. La diferencia está en los detalles que nunca ves.
+                </p>
+                <div class="author-row">
+                    <div class="author-av">RC</div>
+                    <div>
+                        <div class="author-name">Rodrigo Castillo</div>
+                        <div class="author-role">Head Barista · AirRodCoffe</div>
+                    </div>
+                </div>
+                <a href="#" class="read-more">
+                    Leer artículo completo <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ GRID + SIDEBAR ══ -->
+    <div class="blog-layout">
+
+        <!-- ARTICLES -->
+        <div>
+            <div class="articles-grid">
+
+                <!-- Card 1 -->
+                <article class="article-card reveal">
+                    <div class="card-img ci-2">
+                        <svg class="card-img-icon" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="30" stroke="rgba(255,255,255,0.5)" stroke-width="1" />
+                            <path d="M25 48 Q25 58 40 58 Q55 58 55 48 L52 32 H28 Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+                            <path d="M33 30 Q31 24 33 18" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round" />
+                            <path d="M40 28 Q38 22 40 16" stroke="rgba(255,255,255,0.6)" stroke-width="1" stroke-linecap="round" />
+                            <path d="M47 30 Q45 24 47 18" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round" />
+                        </svg>
+                        <span class="card-img-pill">Origen</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="ccat">Origen</span><span class="cdot"></span><span>8 min</span><span class="cdot"></span><span>28 abr 2026</span>
+                        </div>
+                        <h3 class="card-title">Los mejores cafetales de El Salvador que debes conocer</h3>
+                        <p class="card-excerpt">Un recorrido por las fincas de altura que producen algunos de los granos más premiados de Centroamérica.</p>
+                        <div class="card-footer-row">
+                            <div class="card-author">
+                                <div class="card-av">ML</div>
+                                <div class="card-author-name">María López</div>
+                            </div>
+                            <a href="#" class="card-read-link">Leer <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="article-card reveal" style="transition-delay:.1s">
+                    <div class="card-img ci-3">
+                        <svg class="card-img-icon" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect x="20" y="28" width="40" height="28" rx="4" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+                            <rect x="28" y="56" width="24" height="6" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <path d="M30 38 L35 43 L50 33" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="card-img-pill">Tips</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="ccat">Tips & Barismo</span><span class="cdot"></span><span>5 min</span><span class="cdot"></span><span>24 abr 2026</span>
+                        </div>
+                        <h3 class="card-title">Cómo limpiar tu cafetera de manera profesional en casa</h3>
+                        <p class="card-excerpt">Una limpieza correcta puede extender la vida de tu equipo y mejorar notablemente el sabor de cada taza.</p>
+                        <div class="card-footer-row">
+                            <div class="card-author">
+                                <div class="card-av">AR</div>
+                                <div class="card-author-name">Ana Rivas</div>
+                            </div>
+                            <a href="#" class="card-read-link">Leer <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="article-card reveal" style="transition-delay:.15s">
+                    <div class="card-img ci-4">
+                        <svg class="card-img-icon" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="35" r="18" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="rgba(255,255,255,0.08)" />
+                            <path d="M28 60 L32 50 H48 L52 60" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+                            <ellipse cx="40" cy="35" rx="10" ry="5" fill="rgba(255,255,255,0.15)" />
+                            <circle cx="40" cy="35" r="3" fill="rgba(255,255,255,0.4)" />
+                        </svg>
+                        <span class="card-img-pill">Cultura</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="ccat">Cultura cafetera</span><span class="cdot"></span><span>10 min</span><span class="cdot"></span><span>20 abr 2026</span>
+                        </div>
+                        <h3 class="card-title">Latte art: el lenguaje silencioso de los baristas</h3>
+                        <p class="card-excerpt">Más que decoración, el latte art es una declaración de habilidad, paciencia y amor por el oficio.</p>
+                        <div class="card-footer-row">
+                            <div class="card-author">
+                                <div class="card-av">RC</div>
+                                <div class="card-author-name">Rodrigo Castillo</div>
+                            </div>
+                            <a href="#" class="card-read-link">Leer <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="article-card reveal" style="transition-delay:.2s">
+                    <div class="card-img ci-5">
+                        <svg class="card-img-icon" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <path d="M20 55 L30 25 H50 L60 55 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+                            <line x1="25" y1="40" x2="55" y2="40" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <line x1="28" y1="48" x2="52" y2="48" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <path d="M40 25 L40 15 M37 18 L40 15 L43 18" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round" />
+                        </svg>
+                        <span class="card-img-pill">Recetas</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="ccat">Recetas</span><span class="cdot"></span><span>6 min</span><span class="cdot"></span><span>15 abr 2026</span>
+                        </div>
+                        <h3 class="card-title">Cold brew en casa: guía paso a paso para principiantes</h3>
+                        <p class="card-excerpt">Preparar cold brew no requiere equipo especial. Solo necesitas tiempo, paciencia y los granos correctos.</p>
+                        <div class="card-footer-row">
+                            <div class="card-author">
+                                <div class="card-av">ML</div>
+                                <div class="card-author-name">María López</div>
+                            </div>
+                            <a href="#" class="card-read-link">Leer <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="article-card reveal" style="transition-delay:.1s">
+                    <div class="card-img ci-6">
+                        <svg class="card-img-icon" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="22" stroke="rgba(255,255,255,0.35)" stroke-width="1" fill="rgba(255,255,255,0.07)" />
+                            <path d="M40 22 L43 34 H56 L46 42 L49 54 L40 47 L31 54 L34 42 L24 34 H37 Z" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.5)" stroke-width="1" />
+                        </svg>
+                        <span class="card-img-pill">Noticias</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="ccat">Noticias</span><span class="cdot"></span><span>3 min</span><span class="cdot"></span><span>10 abr 2026</span>
+                        </div>
+                        <h3 class="card-title">AirRodCoffe gana premio al mejor café artesanal 2026</h3>
+                        <p class="card-excerpt">Un honor que celebramos con toda la comunidad que nos ha apoyado desde el primer día. Gracias a cada uno.</p>
+                        <div class="card-footer-row">
+                            <div class="card-author">
+                                <div class="card-av">JM</div>
+                                <div class="card-author-name">José Méndez</div>
+                            </div>
+                            <a href="#" class="card-read-link">Leer <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="article-card reveal" style="transition-delay:.15s">
+                    <div class="card-img ci-1">
+                        <svg class="card-img-icon" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect x="22" y="30" width="36" height="26" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+                            <path d="M58 38 Q68 38 68 46 Q68 54 58 54" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+                            <ellipse cx="40" cy="33" rx="14" ry="4" fill="rgba(255,255,255,0.15)" />
+                            <path d="M32 22 Q30 16 32 11" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-linecap="round" />
+                            <path d="M40 20 Q38 14 40 9" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round" />
+                            <path d="M48 22 Q46 16 48 11" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-linecap="round" />
+                        </svg>
+                        <span class="card-img-pill">Estilo de vida</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="ccat">Estilo de vida</span><span class="cdot"></span><span>7 min</span><span class="cdot"></span><span>5 abr 2026</span>
+                        </div>
+                        <h3 class="card-title">El ritual del café de la mañana que cambiará tu día</h3>
+                        <p class="card-excerpt">Pequeñas ceremonias cotidianas que convierten los primeros minutos del día en un momento de pura presencia.</p>
+                        <div class="card-footer-row">
+                            <div class="card-author">
+                                <div class="card-av">AR</div>
+                                <div class="card-author-name">Ana Rivas</div>
+                            </div>
+                            <a href="#" class="card-read-link">Leer <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="load-more-wrap">
+                <button class="btn-load"><i class="fa-solid fa-rotate"></i> Cargar más artículos</button>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- About -->
+            <div class="sidebar-widget reveal">
+                <div class="about-widget-body">
+                    <div class="about-logo">AirRodCoffe</div>
+                    <p class="about-text">Somos una cafetería de especialidad apasionada por el café salvadoreño. Compartimos lo que amamos: historias, recetas y cultura cafetera.</p>
+                    <div class="social-row">
+                        <div class="soc-btn"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="soc-btn"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="soc-btn"><i class="fa-brands fa-tiktok"></i></div>
+                        <div class="soc-btn"><i class="fa-brands fa-whatsapp"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-widget reveal">
+                <div class="widget-header">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span class="widget-title">Categorías</span>
+                </div>
+                <div class="widget-body">
+                    <ul class="cat-list">
+                        <li class="cat-item"><a href="#"><i class="fa-solid fa-chevron-right"></i> Recetas</a><span class="cat-count">14</span></li>
+                        <li class="cat-item"><a href="#"><i class="fa-solid fa-chevron-right"></i> Cultura cafetera</a><span class="cat-count">9</span></li>
+                        <li class="cat-item"><a href="#"><i class="fa-solid fa-chevron-right"></i> Tips & Barismo</a><span class="cat-count">11</span></li>
+                        <li class="cat-item"><a href="#"><i class="fa-solid fa-chevron-right"></i> Noticias</a><span class="cat-count">5</span></li>
+                        <li class="cat-item"><a href="#"><i class="fa-solid fa-chevron-right"></i> Origen</a><span class="cat-count">7</span></li>
+                        <li class="cat-item"><a href="#"><i class="fa-solid fa-chevron-right"></i> Estilo de vida</a><span class="cat-count">8</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Popular -->
+            <div class="sidebar-widget reveal">
+                <div class="widget-header">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="widget-title">Lo más leído</span>
+                </div>
+                <div class="widget-body">
+                    <div class="pop-post">
+                        <div class="pop-thumb t1">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="10" stroke="rgba(196,168,130,0.6)" stroke-width="1" /></svg>
+                        </div>
+                        <div class="pop-info">
+                            <div class="pop-cat">Recetas</div>
+                            <div class="pop-title">El secreto detrás de un espresso perfecto</div>
+                            <div class="pop-date">1 mayo 2026</div>
+                        </div>
+                    </div>
+                    <div class="pop-post">
+                        <div class="pop-thumb t2">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect x="8" y="10" width="14" height="10" rx="2" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none" /></svg>
+                        </div>
+                        <div class="pop-info">
+                            <div class="pop-cat">Origen</div>
+                            <div class="pop-title">Los mejores cafetales de El Salvador</div>
+                            <div class="pop-date">28 abr 2026</div>
+                        </div>
+                    </div>
+                    <div class="pop-post">
+                        <div class="pop-thumb t3">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M10 20 L15 10 L20 20" stroke="rgba(255,255,255,0.5)" stroke-width="1" /></svg>
+                        </div>
+                        <div class="pop-info">
+                            <div class="pop-cat">Noticias</div>
+                            <div class="pop-title">AirRodCoffe gana premio al mejor café artesanal</div>
+                            <div class="pop-date">10 abr 2026</div>
+                        </div>
+                    </div>
+                    <div class="pop-post">
+                        <div class="pop-thumb t4">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="6" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="rgba(255,255,255,0.1)" /></svg>
+                        </div>
+                        <div class="pop-info">
+                            <div class="pop-cat">Cultura</div>
+                            <div class="pop-title">Latte art: el lenguaje silencioso de los baristas</div>
+                            <div class="pop-date">20 abr 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter-widget reveal">
+                <div class="nw-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <div class="nw-title">Suscríbete al blog</div>
+                <p class="nw-sub">Recibe los mejores artículos, recetas y novedades directo a tu correo.</p>
+                <div class="nw-form">
+                    <input type="text" class="nw-input" placeholder="Tu nombre">
+                    <input type="email" class="nw-input" placeholder="tu@correo.com">
+                    <button class="nw-btn"><i class="fa-solid fa-paper-plane"></i> Suscribirme</button>
+                </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="sidebar-widget reveal">
+                <div class="widget-header">
+                    <i class="fa-solid fa-tags"></i>
+                    <span class="widget-title">Etiquetas</span>
+                </div>
+                <div class="widget-body">
+                    <div class="tags-wrap">
+                        <span class="tag">Espresso</span>
+                        <span class="tag">Cold Brew</span>
+                        <span class="tag">Latte</span>
+                        <span class="tag">Barismo</span>
+                        <span class="tag">Arábica</span>
+                        <span class="tag">El Salvador</span>
+                        <span class="tag">Origen</span>
+                        <span class="tag">Cappuccino</span>
+                        <span class="tag">Filtrado</span>
+                        <span class="tag">Maridaje</span>
+                        <span class="tag">Tostado</span>
+                        <span class="tag">V60</span>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo">Coffee Beans</div>
+
+            <div class="footer-copy">
+                &copy; 2024 Coffee Beans. Todos los derechos reservados.
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+
+        // 1. VALIDACIÓN DE ADMINISTRADOR (La ponemos primero)
+        document.addEventListener("DOMContentLoaded", function () {
+            const correo = localStorage.getItem("correoUsuario");
+            console.log("Correo detectado:", correo); // Te ayudará a ver en consola si guardó bien el correo
+
+            if (correo === "kevin@hotmail.com") {
+                const pestanaAdmin = document.getElementById("pestana-admin");
+                if (pestanaAdmin) {
+                    // Usamos 'list-item' en vez de 'block' para que no rompa el diseño de tu menú
+                    pestanaAdmin.style.display = "list-item";
+                }
+            }
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-icon').addEventListener('click', () => {
+            document.getElementById('menu').classList.toggle('open');
+        });
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Scroll reveal
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+</body>
+</html>

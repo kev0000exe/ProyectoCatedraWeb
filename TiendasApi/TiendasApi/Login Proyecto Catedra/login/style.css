@@ -841,25 +841,66 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* =========================================
-   8. FOOTER
-========================================= */
-.Footer2 {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* --- FOOTER FINAL --- */
+.custom-footer {
+    background-color: #2C1A0E !important; /* Color espresso directo */
+    padding: 40px 20px !important;
+    width: 100% !important;
+    display: block !important;
 }
 
-#end {
-    margin-top: 132%;
-    position: relative;
-    z-index: 10;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important; /* Fuerza a que sea una fila */
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-copy {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+}
+
+.footer-links {
+    display: flex !important;
+    gap: 20px;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.7) !important;
+        text-decoration: none !important;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: #C4A882 !important; /* Color dorado al pasar el mouse */
+        }
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}
 /* =========================================
    9. RESPONSIVE DESIGN (MÓVILES Y TABLETS)
 ========================================= */

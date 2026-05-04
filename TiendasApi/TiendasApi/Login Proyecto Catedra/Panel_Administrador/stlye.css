@@ -572,59 +572,10 @@ a {
     z-index: 1;
 }
 
-/* FOOTER */
-footer {
-    background: #0a0a0a;
-    color: #fff;
-    padding: 48px 20px 24px;
-}
 
-.footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 32px;
-    margin-bottom: 28px;
-}
 
-.footer-logo {
-    font-family: 'Cormorant', serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
 
-.footer-copy {
-    font-size: 11px;
-    color: #888;
-}
 
-.footer-col h5 {
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #aaa;
-    margin-bottom: 12px;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col li {
-    margin-bottom: 7px;
-}
-
-.footer-col a {
-    font-size: 12px;
-    color: #aaa;
-    transition: color .2s;
-}
-
-    .footer-col a:hover {
-        color: #fff;
-    }
 
 /* CARRITO FLOTANTE ORIGIANL INDEX */
 .floating-cart {
@@ -2234,4 +2185,66 @@ section {
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     margin-bottom: 32px;
     font-weight: 400;
+}
+
+
+/* --- FOOTER FINAL --- */
+.custom-footer {
+    background-color: #2C1A0E !important; /* Color espresso directo */
+    padding: 40px 20px !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important; /* Fuerza a que sea una fila */
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-copy {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+}
+
+.footer-links {
+    display: flex !important;
+    gap: 20px;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.7) !important;
+        text-decoration: none !important;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: #C4A882 !important; /* Color dorado al pasar el mouse */
+        }
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column !important;
+        text-align: center;
+    }
 }

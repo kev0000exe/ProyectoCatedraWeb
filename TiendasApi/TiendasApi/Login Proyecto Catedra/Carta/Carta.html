@@ -1,26 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | AirRodCoffe</title>
 
-  <!--- librerias ocupadas es font awesome y Frame work ocupado boostrap 5--->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    
+    <style>
+            /* =========================================
+           VARIABLES COMPLEMENTARIAS
+        ========================================= */
+            :root {
+                --espresso: #2C1A0E;
+                --brown: #8B6340;
+                --brown-lt: #C4A882;
+                --cream: #EDE8DF;
+                --white: #FFFFFF;
+                --gray: #9B9189;
+                --sans: 'Montserrat', sans-serif;
+                --serif: 'Cormorant', serif;
+            }
 
+            body {
+                font-family: var(--sans);
+                background-color: #F9F7F5;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            /* =========================================
+           DISEÑO DIVIDIDO (Video a la Izq, Menú a la Der)
+        ========================================= */
+            .layout-split {
+                display: flex;
+                width: 100%;
+                position: relative;
+            }
+
+            /* Contenedor del Video (Izquierda) */
+            .video-side {
+                width: 45%;
+                height: 100vh; /* Ocupa todo el alto de la pantalla */
+                position: sticky;
+                top: 0;
+                background: #000;
+                overflow: hidden;
+            }
+
+                .video-side video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            /* Contenedor del Menú (Derecha) */
+            .menu-side {
+                width: 55%;
+                padding: 4rem 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+
+            /* =========================================
+           ESTILOS DEL MENÚ Y CARTAS
+        ========================================= */
+            .menu-intro {
+                background: var(--white);
+                padding: 2.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+                border-left: 5px solid var(--brown);
+            }
+
+                .menu-intro p {
+                    color: var(--gray);
+                    line-height: 1.8;
+                    margin: 0;
+                }
+
+            .menu-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+
+            .card-custom {
+                background: var(--white);
+                border-radius: 15px;
+                overflow: hidden;
+                border: 1px solid var(--cream);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+                transition: all 0.3s ease;
+                display: flex;
+                flex-direction: column;
+            }
+
+                .card-custom:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 30px rgba(44, 26, 14, 0.12);
+                }
+
+                .card-custom img {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+
+            .card-custom-body {
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .card-custom-title {
+                font-family: var(--serif);
+                font-size: 1.5rem;
+                color: var(--espresso);
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+
+            .card-custom-text {
+                font-size: 0.85rem;
+                color: var(--gray);
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+                flex: 1;
+            }
+
+            .cta {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                width: 100%;
+                padding: 0.8rem;
+                background: var(--espresso);
+                color: var(--white);
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+                .cta:hover {
+                    background: var(--brown);
+                }
+
+                .cta svg {
+                    stroke: var(--white);
+                    fill: none;
+                    stroke-width: 2;
+                }
+
+            /* =========================================
+           FOOTER GLOBAL (ANCHO COMPLETO)
+        ========================================= */
+            .global-footer {
+                background-color: var(--espresso);
+                color: var(--white);
+                padding: 4rem 2rem;
+                width: 100%;
+                position: relative;
+                z-index: 10;
+            }
+
+            .footer-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+
+            .footer-logo {
+                font-family: var(--serif);
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+            .footer-links {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                padding: 0;
+                margin: 0;
+            }
+
+                .footer-links a {
+                    color: rgba(255,255,255,0.7);
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: 0.3s;
+                }
+
+                    .footer-links a:hover {
+                        color: var(--brown-lt);
+                    }
+
+            /* Responsive */
+            @media (max-width: 992px) {
+                .layout-split {
+                    flex-direction: column;
+                }
+
+                .video-side {
+                    width: 100%;
+                    height: 50vh;
+                    position: relative;
+                }
+
+                .menu-side {
+                    width: 100%;
+                    padding: 2rem 1.5rem;
+                }
+            }
+    </style>
 </head>
 <body>
+
     <header>
         <div class="container-hero">
             <div class="container hero">
@@ -33,13 +252,13 @@
                 </div>
 
                 <div class="container-logo">
-
-
                     <h1 class="logo"><a href="/">AirRodCoffe</a></h1>
                 </div>
 
                 <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
+                    <a href="../Perfil/NuevoUsuario.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
                     <button class="btn-checkout">
                         <svg viewBox="0 0 16 16" class="icono-checkout" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
                             <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
@@ -53,366 +272,158 @@
     </header>
 
     <nav class="navbar_container">
-        <i class="fa-solid fa-bars fa-bars" id="menu-icon"></i>
 
         <ul class="menu" id="menu">
             <li><a href="../PaginInicio/index.html">Inicio</a></li>
             <li><a href="../login/Login.html">Login</a></li>
-            <li><a href="#">Mapa</a></li>
+            <li><a href="../mapa/mapa.html">Mapa</a></li>
             <li><a href="../Carta/Carta.html">Menu</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="../Mas/blog.html">Blog</a></li>
 
             <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
 
         </ul>
-
         <form class="search-form">
             <input type="search" placeholder="Buscar..." />
             <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </nav>
 
+    <div class="layout-split">
 
-
-
-    <div class="contenedor-principal">
-
-
-
-
-        <div class="video-container">
-            <div id="Menu2" class="cof">
-
-                <video src="Videos/20250409_2220_Friendly Café Waiter_simple_compose_01jremgm3wf1gs266vxct0r397.mp4"
-                       autoplay
-                       muted
-                       playsinline
-                       onended="this.pause(); this.currentTime = this.duration;">
-                </video>
-
-
-
-            </div>
+        <div class="video-side">
+            <video src="Videos/20250409_2220_Friendly Café Waiter_simple_compose_01jremgm3wf1gs266vxct0r397.mp4"
+                   autoplay
+                   muted
+                   playsinline
+                   onended="this.pause(); this.currentTime = this.duration;">
+            </video>
         </div>
 
-
-
-        <div class="cartaOpciones">
-            <div class="InfoCarta2">
-                <p class="InfoCarta33">
-                    En Caffe AirRod Coffee, hemos creado una carta pensada para deleitar tus sentidos. Desde clásicos atemporales hasta creaciones únicas, cada producto está elaborado con ingredientes de la más alta calidad y un toque de pasión.
-                    Disfruta de nuestras bebidas calientes como el Latte, el Capuchino o el intenso Espresso, perfectos para acompañar tus momentos de inspiración. Si prefieres algo refrescante, prueba nuestras opciones frías como el Iced Latte o el irresistible Milkshake.
-                </p>
+        <div class="menu-side">
+            <div class="menu-intro">
+                <p>En <strong>AirRod Coffee</strong>, hemos creado una carta pensada para deleitar tus sentidos. Desde clásicos atemporales hasta creaciones únicas, cada producto está elaborado con ingredientes de la más alta calidad y un toque de pasión. Disfruta de nuestras bebidas calientes como el Latte o prueba nuestras opciones frías irresistibles.</p>
             </div>
-            <div class="master">
 
-
-
-                <div class="Yavi">
-
-                    <div class="container mt-5">
-                        <div class="row">
-                            <!-- Card 1 -->
-                            <div class="col-md-6 mb-4">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="Imagenes/Imagen de WhatsApp 2025-04-03 a las 08.47.58_0c96243d.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">WULF'S DOUBLE MILKSHAKE </h5>
-                                        <p class="card-text">Una experiencia cremosa y deliciosa que combina la intensidad de sabores únicos con la suavidad perfecta. Ideal para quienes buscan un toque de indulgencia en cada sorbo. ¡Déjate conquistar por su magia!</p>
-                                        <div class="button-container">
-                                            <button class="cta" onclick='addToCart({
-                        name: "WULFS DOUBLE MILKSHAKE",
-                        description: "Una bebida deliciosa...",
-                        price: 8.50,
-                        image: "../carta/Imagenes/Imagen de WhatsApp 2025-04-03 a las 08.47.58_0c96243d.jpg",
-                      })'>
-                                                <span>Agregar</span>
-                                                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                            </button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card 2 -->
-                            <div class="col-md-6 mb-4">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="Imagenes/Americano.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Americano</h5>
-                                        <p class="card-text">Un clásico atemporal que resalta la esencia pura del café. Su sabor equilibrado y aroma envolvente lo convierten en la elección perfecta para quienes buscan disfrutar de la simplicidad y elegancia en cada sorbo.</p>
-                                        <div class="button-container">
-                                            <button class="cta" onclick='addToCart({
-                        name: "Americano",
-                        description: "Un clásico atemporal que resalta la esencia pura del café. Su sabor equilibrado y aroma envolvente lo convierten en la elección perfecta para quienes buscan disfrutar de la simplicidad y elegancia en cada sorbo. Ideal para acompañar tus momentos de inspiración o una charla relajada.",
-                        price: 10.00,
-                        image: "../carta/imagenes/Americano.jpg",
-                      })'>
-                                                <span>Agregar</span>
-                                                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card 3 -->
-                            <div class="col-md-6 mb-4">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="Imagenes/Latte.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Latte</h5>
-                                        <p class="card-text"> Una deliciosa combinación de espresso y leche al vapor, coronada con una suave capa de espuma. Perfecto para quienes buscan un equilibrio entre la intensidad del café y la cremosidad de la leche. ¡Un placer en cada sorbo!</p>
-                                        <div class="button-container">
-                                            <button class="cta" onclick='addToCart({
-                        name: "Latte",
-                        description: "Una experiencia suave y reconfortante que combina la intensidad del espresso con la cremosidad de la leche al vapor. Perfecto para quienes buscan un equilibrio entre sabor y textura, ideal para acompañar tus momentos de relajación o inspiración. ¡Un clásico que nunca pasa de moda!",
-                        price: 10.00,
-                        image: "../carta/Imagenes/Latte.jpg",
-                      })'>
-                                                <span>Agregar</span>
-                                                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card 4 -->
-                            <div class="col-md-6 mb-4">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="Imagenes/Macchiato.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Macchiato:</h5>
-                                        <p class="card-text">Una elegante combinación de espresso y un toque de leche espumada. Perfecto para quienes buscan disfrutar de la intensidad del café con un delicado equilibrio de suavidad. ¡Un clásico refinado para los amantes del buen gusto!</p>
-                                        <div class="button-container">
-                                            <button class="cta" onclick='addToCart({
-                        name: "Macchiato",
-                        description: "Una sofisticada mezcla de espresso y un delicado toque de leche espumada. Su sabor intenso y su textura suave lo convierten en la elección perfecta para quienes buscan un equilibrio entre fuerza y suavidad. Ideal para disfrutar en cualquier momento del día.",
-                        price: 10.00,
-                        image: "../carta/Imagenes/Macchiato.jpg",
-                      })'>
-                                                <span>Agregar</span>
-                                                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="Imagenes/Matcha Latte.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Macchiato Latte:</h5>
-                                        <p class="card-text">Una deliciosa mezcla de té verde matcha y leche al vapor, que combina la suavidad de la leche con el sabor único y vibrante del matcha. Perfecto para quienes buscan una experiencia reconfortante y llena de antioxidantes. ¡Un deleite para los sentidos!</p>
-                                        <div class="button-container">
-                                            <button class="cta" onclick='addToCart({
-                        name: "Macchiato Latte",
-                        description: "Una deliciosa combinación de té verde matcha y leche al vapor, que fusiona la suavidad de la leche con el sabor vibrante y único del matcha. Perfecto para quienes buscan una experiencia reconfortante, llena de antioxidantes y un toque de sofisticación. ¡Un deleite para los sentidos!",
-                        price: 10.00,
-                        image: "../carta/Imagenes/Matcha Latte.jpg",
-                      })'>
-                                                <span>Agregar</span>
-                                                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-                    <div class="ContainerYavi">
-
-                        <!-- Card 5 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Imagenes/ChatGPT Image 9 abr 2025, 08_28_21 p.m..png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Yavi's MilkShake</h5>
-                                    <p class="card-text"> Una mezcla irresistible de sabores que despiertan los sentidos. Su textura suave y cremosa, combinada con un toque de dulzura, lo convierte en el acompañamiento perfecto para cualquier momento especial. ¡Déjate sorprender por su encanto!</p>
-                                    <div class="button-container">
-                                        <button class="cta" onclick='addToCart({
-                  name: "Yavis Milk Shake",
-                  description: "Una bebida deliciosa...",
-                  price: 10.00,
-                  image: "../carta/Imagenes/ChatGPT Image 9 abr 2025, 08_28_21 p.m..png",
-                })'>
-                                            <span>Agregar</span>
-                                            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 6 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Imagenes/Capuchino.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Capuchino</h5>
-                                    <p class="card-text">Una obra maestra del café que combina la intensidad del espresso con la suavidad de la leche espumada. Perfecto para quienes buscan un equilibrio entre sabor y textura en cada sorbo. ¡Un clásico que nunca pasa de moda!</p>
-                                    <div class="button-container">
-                                        <button class="cta" onclick='addToCart({
-                  name: "Capuchino",
-                  description: "Una obra maestra del café que combina la intensidad del espresso con la suavidad de la leche espumada. Perfecto para quienes buscan un equilibrio entre sabor y textura en cada sorbo. ¡Un clásico que nunca pasa de moda!",
-                  price: 10.00,
-                  image: "../carta/Imagenes/Capuchino.jpg",
-                })'>
-                                            <span>Agregar</span>
-                                            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 7 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Imagenes/Mocha.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mocha</h5>
-                                    <p class="card-text">Na exquisita fusión de espresso, chocolate y leche al vapor, coronada con crema batida. Perfecto para quienes buscan un toque dulce y sofisticado en cada sorbo. ¡El equilibrio ideal entre café y chocolate!</p>
-                                    <div class="button-container">
-                                        <button class="cta" onclick='addToCart({
-                  name: "Mocha",
-                  description: "Una exquisita fusión de espresso, chocolate y leche al vapor, coronada con crema batida. Perfecto para quienes buscan un toque dulce y sofisticado en cada sorbo. ¡El equilibrio ideal entre café y chocolate!",
-                  price: 10.00,
-                  image: "../carta/Imagenes/Mocha.jpg",
-                })'>
-                                            <span>Agregar</span>
-                                            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 8 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="Imagenes/Iced Latte.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Iced Latte</h5>
-                                    <p class="card-text">Una refrescante combinación de espresso y leche fría, servida con hielo para un toque revitalizante. Perfecto para quienes buscan disfrutar del equilibrio entre la intensidad del café y la suavidad de la leche en un formato fresco y delicioso. ¡Ideal para cualquier momento del día!</p>
-                                    <div class="button-container">
-                                        <button class="cta" onclick='addToCart({
-                  name: "Iced Latte",
-                  description: "Una refrescante combinación de espresso y leche fría, servida con hielo para un toque revitalizante. Perfecto para quienes buscan disfrutar del equilibrio entre la intensidad del café y la suavidad de la leche en un formato fresco y delicioso. ¡Ideal para cualquier momento del día!",
-                  price: 10.00,
-                  image: "../carta/Imagenes/Iced Latte.jpg",
-                })'>
-                                            <span>Agregar</span>
-                                            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="menu-grid">
+                <div class="card-custom">
+                    <img src="Imagenes/Imagen de WhatsApp 2025-04-03 a las 08.47.58_0c96243d.jpg" alt="Double Milkshake">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Wulf's Double Milkshake</h5>
+                        <p class="card-custom-text">Una experiencia cremosa y deliciosa que combina la intensidad de sabores únicos con la suavidad perfecta.</p>
+                        <button class="cta" onclick='addToCart({ name: "WULFS DOUBLE MILKSHAKE", price: 8.50, image: "../carta/Imagenes/Imagen de WhatsApp 2025-04-03 a las 08.47.58_0c96243d.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
                     </div>
                 </div>
 
+                <div class="card-custom">
+                    <img src="Imagenes/Americano.jpg" alt="Americano">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Americano</h5>
+                        <p class="card-custom-text">Un clásico atemporal que resalta la esencia pura del café. Su sabor equilibrado y aroma envolvente.</p>
+                        <button class="cta" onclick='addToCart({ name: "Americano", price: 10.00, image: "../carta/imagenes/Americano.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
 
+                <div class="card-custom">
+                    <img src="Imagenes/Latte.jpg" alt="Latte">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Latte</h5>
+                        <p class="card-custom-text">Una deliciosa combinación de espresso y leche al vapor, coronada con una suave capa de espuma.</p>
+                        <button class="cta" onclick='addToCart({ name: "Latte", price: 10.00, image: "../carta/Imagenes/Latte.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <img src="Imagenes/Macchiato.jpg" alt="Macchiato">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Macchiato</h5>
+                        <p class="card-custom-text">Una elegante combinación de espresso y un toque de leche espumada. Un clásico refinado.</p>
+                        <button class="cta" onclick='addToCart({ name: "Macchiato", price: 10.00, image: "../carta/Imagenes/Macchiato.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <img src="Imagenes/Matcha Latte.jpg" alt="Matcha Latte">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Matcha Latte</h5>
+                        <p class="card-custom-text">Una deliciosa mezcla de té verde matcha y leche al vapor. Lleno de antioxidantes.</p>
+                        <button class="cta" onclick='addToCart({ name: "Matcha Latte", price: 10.00, image: "../carta/Imagenes/Matcha Latte.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <img src="Imagenes/ChatGPT Image 9 abr 2025, 08_28_21 p.m..png" alt="Yavi's Milkshake">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Yavi's Milkshake</h5>
+                        <p class="card-custom-text">Una mezcla irresistible de sabores que despiertan los sentidos. Textura suave y cremosa.</p>
+                        <button class="cta" onclick='addToCart({ name: "Yavis Milk Shake", price: 10.00, image: "../carta/Imagenes/ChatGPT Image 9 abr 2025, 08_28_21 p.m..png" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <img src="Imagenes/Capuchino.jpg" alt="Capuchino">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Capuchino</h5>
+                        <p class="card-custom-text">Una obra maestra del café que combina la intensidad del espresso con la suavidad de la leche espumada.</p>
+                        <button class="cta" onclick='addToCart({ name: "Capuchino", price: 10.00, image: "../carta/Imagenes/Capuchino.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <img src="Imagenes/Mocha.jpg" alt="Mocha">
+                    <div class="card-custom-body">
+                        <h5 class="card-custom-title">Mocha</h5>
+                        <p class="card-custom-text">Una exquisita fusión de espresso, chocolate y leche al vapor, coronada con crema batida.</p>
+                        <button class="cta" onclick='addToCart({ name: "Mocha", price: 10.00, image: "../carta/Imagenes/Mocha.jpg" })'>
+                            <span>Agregar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </div>
 
-
-
-
-    <footer class="text-light py-4" id="end">
-        <div class="container">
-            <div class="row">
-                <!-- Logo y derechos -->
-                <div class="col-md-3 d-flex align-items-center">
-                    <img src="https://img.freepik.com/vector-premium/logo-cafeteria-taza-cafe-sobre-fondo-negro_447549-705.jpg" alt="Logo" width="40" class="cafe">
-                    <span class="ms-2">© 2025</span>
-                </div>
-                <!-- Sección de enlaces -->
-                <div class="col-md-3">
-                    <h5 class="text-uppercase">Section</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase">Section</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase">Section</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                    </ul>
-                </div>
+    <footer class="global-footer">
+        <div class="footer-content">
+            <div class="footer-logo">AirRod Coffee</div>
+            <ul class="footer-links">
+                <li><a href="../PaginInicio/index.html">Inicio</a></li>
+                <li><a href="../Carta/Carta.html">Menú</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">
+                &copy; 2024 AirRod Coffee. Todos los derechos reservados.
             </div>
         </div>
     </footer>
+
     <div id="floating-cart" class="floating-cart" onclick="window.location.href='../Carrito/Carrito.html'">
         <i class="fa-solid fa-basket-shopping"></i>
         <span id="cart-bubble" class="cart-bubble"></span>
     </div>
+
+    <script src="../Carta/script.js"></script>
 </body>
-
-
-<script src="../Carta/script.js">
-
-    
-</script>
-
 </html>

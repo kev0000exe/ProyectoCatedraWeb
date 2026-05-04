@@ -1,10 +1,292 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirRodCoffe — Mapa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../mapa/style.css" />
+
 </head>
 <body>
 
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+
+
+                    <h1 class="logo"><a href="/">AirRodCoffe</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <a href="../Perfil/NuevoUsuario.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <button class="btn-checkout">
+                        <svg viewBox="0 0 16 16" class="icono-checkout" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                            <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                        </svg>
+                        <p class="texto-checkout">Buy Now</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar_container">
+        <i class="fa-solid fa-bars fa-bars" id="menu-icon"></i>
+
+
+        <ul class="menu" id="menu">
+            <li><a href="../PaginInicio/index.html">Inicio</a></li>
+            <li><a href="../login/Login.html">Login</a></li>
+            <li><a href="../mapa/mapa.html">Mapa</a></li>
+            <li><a href="../Carta/Carta.html">Menu</a></li>
+            <li><a href="../Mas/blog.html">Blog</a></li>
+
+            <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
+
+        </ul>
+
+        <form class="search-form">
+            <input type="search" placeholder="Buscar..." />
+            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+
+    <!-- ══ PAGE BANNER ══ -->
+    <section class="page-banner">
+        <div class="banner-eyebrow">AirRodCoffe · San Salvador</div>
+        <h1 class="banner-title">Nuestra <em>ubicación</em></h1>
+        <p class="banner-sub">Ven a visitarnos · Siempre hay café fresco esperándote</p>
+    </section>
+
+    <!-- ══ BREADCRUMB ══ -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+
+        </div>
+    </div>
+
+    <!-- ══ MAIN ══ -->
+    <div class="main-wrapper">
+
+        <!-- LEFT: Info -->
+        <div class="reveal">
+            <div class="section-tag">Encuéntranos</div>
+            <h2 class="info-title">Visítanos en<br><em>San Benito</em></h2>
+            <p class="info-desc">
+                Descubre el verdadero sabor del café artesanal. Somos un espacio diseñado para inspirarte, relajarte y disfrutar de los mejores granos seleccionados y preparados a la perfección.
+            </p>
+
+            <div class="detail-cards">
+                <div class="detail-card">
+                    <div class="dc-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <div class="dc-label">Dirección</div>
+                        <div class="dc-value">Bulevar Del Hipódromo 537</div>
+                        <div class="dc-sub">San Benito, San Salvador, El Salvador</div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="dc-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div>
+                        <div class="dc-label">Horario</div>
+                        <div class="dc-value">Lun – Sáb: 9:00 AM – 6:00 PM</div>
+                        <div class="dc-sub">Domingos: 9:00 AM – 5:00 PM</div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="dc-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <div class="dc-label">Contacto</div>
+                        <div class="dc-value">123-456-7890</div>
+                        <div class="dc-sub">info@airrodcoffe.sv</div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="dc-icon"><i class="fa-solid fa-star"></i></div>
+                    <div>
+                        <div class="dc-label">Calificación</div>
+                        <div class="dc-value">4.9 / 5.0 · Excepcional</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-row">
+                <a href="https://maps.google.com/?q=Good+Beans+El+Salvador+Coffee+Roasters" target="_blank" class="btn-primary">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar
+                </a>
+                <a href="#" class="btn-secondary">
+                    <i class="fa-solid fa-phone"></i> Llamar ahora
+                </a>
+            </div>
+        </div>
+
+        <!-- RIGHT: Map -->
+        <div class="map-side reveal" style="transition-delay:.18s;">
+            <div class="map-header">
+                <div class="map-header-title">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    AirRodCoffe — Ubicación en tiempo real
+                </div>
+                <div class="live-badge">
+                    <span class="live-dot"></span> En vivo
+                </div>
+            </div>
+
+            <div class="map-frame">
+                <div class="mc mc-tl"></div>
+                <div class="mc mc-tr"></div>
+                <div class="mc mc-bl"></div>
+                <div class="mc mc-br"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.3!2d-89.24422!3d13.69161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63262f8e706def%3A0x412bbea5d9cd056b!2sGood%20Beans%20El%20Salvador%20Coffee%20Roasters!5e0!3m2!1ses!2ssv!4v1700000000000"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="map-footer">
+                <div class="map-address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Bulevar Del Hipódromo 537, San Benito
+                </div>
+                <a href="https://maps.google.com/?q=Good+Beans+El+Salvador+Coffee+Roasters" target="_blank" class="btn-directions">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Ir
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ HOURS ══ -->
+    <section class="hours-strip reveal">
+        <div class="hours-inner">
+            <div class="hours-heading">
+                <div class="section-tag">Horarios</div>
+                <h2 class="hours-title">Abiertos<br><em>para ti</em></h2>
+            </div>
+            <div class="hours-table">
+                <div class="hours-row"><span>Lunes</span><span class="hours-time">9:00 – 18:00</span></div>
+                <div class="hours-row"><span>Martes</span><span class="hours-time">9:00 – 18:00</span></div>
+                <div class="hours-row"><span>Miércoles</span><span class="hours-time">9:00 – 18:00</span></div>
+                <div class="hours-row"><span>Jueves</span><span class="hours-time">9:00 – 18:00</span></div>
+                <div class="hours-row"><span>Viernes</span><span class="hours-time">9:00 – 18:00</span></div>
+                <div class="hours-row"><span>Sábado</span><span class="hours-time">9:00 – 18:00</span></div>
+                <div class="hours-row today" id="domingo-row">
+                    <span>Domingo <span class="today-tag" id="today-tag" style="display:none;">Hoy</span></span>
+                    <span class="hours-time">9:00 – 17:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FEATURES ══ -->
+    <section class="features-strip reveal">
+        <div class="features-inner">
+            <div class="feature-item">
+                <div class="feat-icon"><i class="fa-solid fa-wifi"></i></div>
+                <div class="feat-title">WiFi Gratuito</div>
+                <div class="feat-desc">Conexión de alta velocidad para trabajar o estudiar.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feat-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                <div class="feat-title">Café de Origen</div>
+                <div class="feat-desc">Granos salvadoreños seleccionados y tostados en casa.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feat-icon"><i class="fa-solid fa-car"></i></div>
+                <div class="feat-title">Estacionamiento</div>
+                <div class="feat-desc">Parqueo disponible frente al local sin costo adicional.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feat-icon"><i class="fa-solid fa-paw"></i></div>
+                <div class="feat-title">Pet Friendly</div>
+                <div class="feat-desc">Tu mascota también es bienvenida en nuestra terraza.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">AirRodCoffe</div>
+            <p class="footer-copy">© 2026 AirRodCoffe · Todos los derechos reservados</p>
+            <ul class="footer-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">WhatsApp</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+
+        // 1. VALIDACIÓN DE ADMINISTRADOR (La ponemos primero)
+        document.addEventListener("DOMContentLoaded", function () {
+            const correo = localStorage.getItem("correoUsuario");
+            console.log("Correo detectado:", correo); // Te ayudará a ver en consola si guardó bien el correo
+
+            if (correo === "kevin@hotmail.com") {
+                const pestanaAdmin = document.getElementById("pestana-admin");
+                if (pestanaAdmin) {
+                    // Usamos 'list-item' en vez de 'block' para que no rompa el diseño de tu menú
+                    pestanaAdmin.style.display = "list-item";
+                }
+            }
+        });
+
+        // Mobile menu
+        document.getElementById('menu-icon').addEventListener('click', () => {
+            document.getElementById('menu').classList.toggle('open');
+        });
+
+        // Mark today
+        const days = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+        const todayName = days[new Date().getDay()];
+        document.querySelectorAll('.hours-row').forEach(row => {
+            const dayText = row.querySelector('span')?.textContent.trim().toLowerCase();
+            if (dayText && dayText.startsWith(todayName)) {
+                row.classList.add('today');
+                const tag = row.querySelector('.today-tag');
+                if (tag) tag.style.display = 'inline';
+            }
+        });
+
+        // Sunday badge
+        if (new Date().getDay() === 0) {
+            document.getElementById('today-tag').style.display = 'inline';
+        }
+
+        // Scroll reveal
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
 </body>
 </html>
