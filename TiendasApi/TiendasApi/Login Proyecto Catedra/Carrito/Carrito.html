@@ -20,117 +20,129 @@
 
 </head>
 <body>
-  <header>
-    <div class="container-hero">
-      <div class="container hero">
-  
-        <!-- Soporte al cliente -->
-        <div class="customer-support">
-          <i class="fa-solid fa-headset"></i>
-          <div class="content-customer-support">
-            
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
 
-            <!-- From Uiverse.io by gagan-gv --> 
-<div>
+                <!-- Soporte al cliente -->
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
 
-</div>
 
-            
-            <span class="text">Soporte al cliente</span>
-            <span class="number">123-456-7890</span>
-          </div>
+                        <!-- From Uiverse.io by gagan-gv -->
+                        <div>
+
+                        </div>
+
+
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <!-- Logo -->
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/">AirRodCoffe</a></h1>
+                </div>
+
+                <!-- Usuario y carrito -->
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping">
+
+                        <button class="btn-checkout">
+                            <svg viewBox="0 0 16 16" class="icono-checkout" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                            </svg>
+                            <p class="texto-checkout">Buy Now</p>
+                        </button>
+
+
+                    </i>
+                </div>
+
+            </div>
         </div>
-  
-        <!-- Logo -->
-        <div class="container-logo">
-          <i class="fa-solid fa-mug-hot"></i>
-          <h1 class="logo"><a href="/">AirRodCoffe</a></h1>
-        </div>
-  
-        <!-- Usuario y carrito -->
-        <div class="container-user">
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-basket-shopping">  
+    </header>
+    <nav class="navbar container">
 
-            <button class="btn-checkout">
-              <svg viewBox="0 0 16 16" class="icono-checkout" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
-                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-              </svg>
-              <p class="texto-checkout">Buy Now</p>
+        <!-- Ícono de menú hamburguesa (para móviles) -->
+        <i class="fa-solid fa-bars"></i>
+
+        <!-- Menú principal -->
+        <ul class="menu">
+            <li><a href="../PaginInicio/index.html">Inicio</a></li>
+            <li><a href="../login/Login.html">Login</a></li>
+            <li><a href="#">Mapa</a></li>
+            <li><a href="../Carta/Carta.html">Menu</a></li>
+            <li><a href="#">Blog</a></li>
+            <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
+
+        </ul>
+
+        <!-- Barra de búsqueda -->
+        <form class="search-form">
+            <input type="search" placeholder="Buscar..." />
+            <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            
+        </form>
 
-          </i>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="paginaPrincipal"></div>
+
+    <!-- React app -->
+    <div id="root"></div>
+
+    <!-- Footer -->
+    <footer class="text-light py-4" id="end">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center">
+                    <img src="https://img.freepik.com/vector-premium/logo-cafeteria-taza-cafe-sobre-fondo-negro_447549-705.jpg" alt="Logo" width="40" class="cafe" />
+                    <span class="ms-2">© 2025</span>
+                </div>
+                <!-- Repetir secciones -->
+                <div class="col-md-3" repeat="3">
+                    <h5 class="text-uppercase">Section</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Features</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-  
-      </div>
-    </div>
-  </header>
-  <nav class="navbar container">
+    </footer>
 
-    <!-- Ícono de menú hamburguesa (para móviles) -->
-    <i class="fa-solid fa-bars"></i>
-  
-    <!-- Menú principal -->
-    <ul class="menu">
-        <li><a href="../PaginInicio/index.html">Inicio</a></li>
-        <li><a href="../login/Login.html">Login</a></li>
-        <li><a href="#">Mapa</a></li>
-        <li><a href="../Carta/Carta.html">Menu</a></li>
-        <li><a href="#">Más</a></li>
-        <li><a href="#">Blog</a></li>
-        <li id="pestana-admin" style="display: none;"><a href="/admin">Panel Administrador</a></li>
+    <!-- Scripts: React, ReactDOM, Babel -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    </ul>
-  
-    <!-- Barra de búsqueda -->
-    <form class="search-form">
-      <input type="search" placeholder="Buscar..." />
-      <button class="btn-search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </form>
-  
-  </nav>
-  
-  <!-- Contenido principal -->
-  <div class="paginaPrincipal"></div>
+    <!-- Tu app JSX -->
+    <script type="text/babel" src="../Carrito/app.js"></script>
 
-  <!-- React app -->
-  <div id="root"></div>
+    <script>
+        // Validacion de Administrador Directa
+        const correo = localStorage.getItem("correoUsuario");
+        console.log("Correo detectado en el Carrito:", correo);
 
-  <!-- Footer -->
-  <footer class="text-light py-4" id="end">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 d-flex align-items-center">
-          <img src="https://img.freepik.com/vector-premium/logo-cafeteria-taza-cafe-sobre-fondo-negro_447549-705.jpg" alt="Logo" width="40" class="cafe" />
-          <span class="ms-2">© 2025</span>
-        </div>
-        <!-- Repetir secciones -->
-        <div class="col-md-3" repeat="3">
-          <h5 class="text-uppercase">Section</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Features</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Pricing</a></li>
-            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-            <li><a href="#" class="text-light text-decoration-none">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts: React, ReactDOM, Babel -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <!-- Tu app JSX -->
-  <script type="text/babel" src="app.js"></script>
+        if (correo === "kevin@hotmail.com") {
+            const pestanaAdmin = document.getElementById("pestana-admin");
+            if (pestanaAdmin) {
+                pestanaAdmin.style.display = "list-item";
+            }
+        }
+    </script>
 
 </body>
 </html>

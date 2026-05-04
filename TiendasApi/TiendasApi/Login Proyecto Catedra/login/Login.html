@@ -56,9 +56,9 @@
             <li><a href="../login/Login.html">Login</a></li>
             <li><a href="#">Mapa</a></li>
             <li><a href="../Carta/Carta.html">Menu</a></li>
-            <li><a href="#">Más</a></li>
             <li><a href="#">Blog</a></li>
-            <li id="pestana-admin" style="display: none;"><a href="/admin">Panel Administrador</a></li>
+            <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
+
 
         </ul>
 
@@ -152,9 +152,31 @@
 </body>
 
 <script>
+
+    // 1. VALIDACIÓN DE ADMINISTRADOR (La ponemos primero)
+    document.addEventListener("DOMContentLoaded", function () {
+        const correo = localStorage.getItem("correoUsuario");
+        console.log("Correo detectado:", correo); // Te ayudará a ver en consola si guardó bien el correo
+
+        if (correo === "kevin@hotmail.com") {
+            const pestanaAdmin = document.getElementById("pestana-admin");
+            if (pestanaAdmin) {
+                // Usamos 'list-item' en vez de 'block' para que no rompa el diseño de tu menú
+                pestanaAdmin.style.display = "list-item";
+            }
+        }
+    });
+
+
   document.querySelector('.BTN--Iniciar').addEventListener('click', async function () {
     const correo = document.querySelector('.form-controlLogin').value;
     const contraseña = document.querySelector('.form-controlContraseña').value;
+
+    // 1. Validar que los campos no estén vacíos ANTES de enviar al servidor
+    if (!correo || !contraseña) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
 
     try {
       const response = await fetch("https://localhost:7151/api/Auth/login", {
@@ -174,6 +196,9 @@
 
         // Guarda el token en localStorage
         localStorage.setItem("token", data.token);
+        
+        // NUEVO: Guardamos el correo en el almacenamiento del navegador
+        localStorage.setItem("correoUsuario", correo);
 
         // Redirige a la página principal
         window.location.href = "../PaginInicio/index.html";
@@ -181,15 +206,13 @@
         const error = await response.text();
         alert("Error al iniciar sesión: " + error);
       }
-      if (!correo || !contraseña) {
-  alert("Por favor, completa todos los campos.");
-  return;
-}
     } catch (error) {
       console.error("Error de red:", error);
       alert("No se pudo conectar con el servidor.");
     }
   });
+
+  
 </script>
 
 

@@ -53,9 +53,9 @@
             <li><a href="../login/Login.html">Login</a></li>
             <li><a href="#">Mapa</a></li>
             <li><a href="../Carta/Carta.html">Menu</a></li>
-            <li><a href="#">Más</a></li>
             <li><a href="#">Blog</a></li>
-            <li id="pestana-admin" style="display: none;"><a href="/admin">Panel Administrador</a></li>
+
+            <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
 
         </ul>
 
@@ -385,30 +385,59 @@
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // --- MAPA ---
-        var map = L.map('map').setView([40.7128, -74.0060], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-        L.marker([40.7128, -74.0060]).addTo(map).bindPopup('Nueva York').openPopup();
+        // 1. VALIDACIÓN DE ADMINISTRADOR (La ponemos primero)
+        document.addEventListener("DOMContentLoaded", function () {
+            const correo = localStorage.getItem("correoUsuario");
+            console.log("Correo detectado:", correo); // Te ayudará a ver en consola si guardó bien el correo
 
-        // --- CAROUSEL ---
+            if (correo === "kevin@hotmail.com") {
+                const pestanaAdmin = document.getElementById("pestana-admin");
+                if (pestanaAdmin) {
+                    // Usamos 'list-item' en vez de 'block' para que no rompa el diseño de tu menú
+                    pestanaAdmin.style.display = "list-item";
+                }
+            }
+        });
+
+        // 2. --- MAPA --- (Con seguro antibloqueos)
+        const mapContainer = document.getElementById('map');
+        if (mapContainer) {
+            var map = L.map('map').setView([40.7128, -74.0060], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            L.marker([40.7128, -74.0060]).addTo(map).bindPopup('Nueva York').openPopup();
+        }
+
+        // 3. --- CAROUSEL ---
         const track = document.getElementById('cardsTrack');
         if (track) track.innerHTML += track.innerHTML;
 
-        // --- TESTIMONIALS ---
+        // 4. --- TESTIMONIALS --- (Con seguro antibloqueos)
         let current = 0;
         const slides = document.querySelectorAll('.testim-slide');
         const dots = document.querySelectorAll('.testim-dot');
+
         function goTo(n) {
-            slides[current].classList.remove('active');
-            dots[current].classList.remove('active');
-            current = (n + slides.length) % slides.length;
-            slides[current].classList.add('active');
-            dots[current].classList.add('active');
+            // Solo ejecuta esto si realmente hay slides en la página
+            if (slides.length > 0 && dots.length > 0) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (n + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+            }
         }
-        document.getElementById('left-arrow').onclick = () => goTo(current - 1);
-        document.getElementById('right-arrow').onclick = () => goTo(current + 1);
-        setInterval(() => goTo(current + 1), 5000);
+
+        const leftArrow = document.getElementById('left-arrow');
+        const rightArrow = document.getElementById('right-arrow');
+
+        if (leftArrow) leftArrow.onclick = () => goTo(current - 1);
+        if (rightArrow) rightArrow.onclick = () => goTo(current + 1);
+
+        if (slides.length > 0) {
+            setInterval(() => goTo(current + 1), 5000);
+        }
     </script>
 </body>
 </html>
