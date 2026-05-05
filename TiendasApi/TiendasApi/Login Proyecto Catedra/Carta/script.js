@@ -1,93 +1,96 @@
-const videoContainer = document.querySelector('.video-container');
-const footer = document.querySelector('footer');
-const navbar = document.querySelector('.navbar_container'); // Selecciona el navbar
-const video = document.querySelector('#Menu2');
-
+// --- LÓGICA DEL VIDEO ---
 window.addEventListener('scroll', () => {
-  const footerTop = footer.getBoundingClientRect().top;
-  const navbarBottom = navbar.getBoundingClientRect().bottom;
+    const footer = document.querySelector('footer');
+    const navbar = document.querySelector('.navbar_container');
+    const video = document.querySelector('#Menu2');
+    if (!footer || !navbar || !video) return;
 
-  if (navbarBottom <= 0 && footerTop > window.innerHeight) {
-    // Si el navbar ya no es visible y el footer no está visible, fija el video
-    video.style.position = 'fixed';
-    video.style.top = '0';
-    video.style.bottom = 'auto';
-    video.style.zIndex = '1'; // Asegura que el video esté detrás del footer
-  } else if (footerTop <= window.innerHeight) {
-    // Si el footer es visible, permite que el footer lo cubra
-    video.style.position = 'fixed';
-    video.style.top = '0';
-    video.style.zIndex = '-1'; // Envía el video detrás del footer
-  } else {
-    // Si el navbar es visible, regresa el video a su posición original
-    video.style.position = 'absolute';
-    video.style.top = '0';
-    video.style.bottom = 'auto';
-    video.style.zIndex = '1'; // Restaura el z-index del video
-  }
-});
-
-
-
-
-function addToCart(product) {
-  // Obtener el carrito actual desde localStorage
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-  // Buscar si el producto ya existe en el carrito
-  const existing = cart.find(p => p.name === product.name);
-  if (existing) {
-    // Si el producto ya existe, incrementar su cantidad
-    existing.quantity += 1;
-  } else {
-    // Si el producto no existe, agregarlo con cantidad inicial de 1
-    cart.push({ ...product, quantity: 1 });
-  }
-
-  // Guardar el carrito actualizado en localStorage
-  localStorage.setItem("cart", JSON.stringify(cart));
-
-  // Actualizar la burbuja del carrito
-  updateCartBubble();
-
-  // Mostrar una alerta opcional
-  alert("Producto agregado al carrito");
-}
-
-// Función para actualizar la burbuja del carrito
-function updateCartBubble() {
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const cartCount = cart.reduce((sum, p) => sum + p.quantity, 0);
-
-  const cartBubble = document.getElementById("cart-bubble");
-  if (cartBubble) {
-    cartBubble.textContent = cartCount;
-    cartBubble.style.display = cartCount > 0 ? "flex" : "none";
-  }
-}
-
-// Inicializar la burbuja del carrito al cargar la página
-document.addEventListener("DOMContentLoaded", updateCartBubble);
-
-// Simulamos que al iniciar sesión guardaste el rol en el LocalStorage
-const rolUsuario = localStorage.getItem('userRole'); // Ejemplo: 'Admin' o 'User'
-
-if (rolUsuario === 'Admin') {
-    // Si es administrador, buscamos la pestaña y la mostramos
-    document.getElementById('pestana-admin').style.display = 'block'; // o 'list-item'
-}
-
-
-// 1. VALIDACIÓN DE ADMINISTRADOR (La ponemos primero)
-document.addEventListener("DOMContentLoaded", function () {
-    const correo = localStorage.getItem("correoUsuario");
-    console.log("Correo detectado:", correo); // Te ayudará a ver en consola si guardó bien el correo
-
-    if (correo === "kevin@hotmail.com") {
-        const pestanaAdmin = document.getElementById("pestana-admin");
-        if (pestanaAdmin) {
-            // Usamos 'list-item' en vez de 'block' para que no rompa el diseño de tu menú
-            pestanaAdmin.style.display = "list-item";
-        }
+    const footerTop = footer.getBoundingClientRect().top;
+    if (footerTop <= window.innerHeight) {
+        video.style.zIndex = '-1';
+    } else {
+        video.style.zIndex = '1';
     }
 });
+
+// --- LÓGICA DEL CARRITO ---
+function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(p => p.name === product.name);
+    if (existing) { existing.quantity += 1; }
+    else { cart.push({ ...product, quantity: 1 }); }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartBubble(); // Solo actualiza el número, no abre el modal
+}
+
+function toggleCartModal() {
+    const modal = document.getElementById('cart-modal-overlay');
+    if (modal) {
+        const isActive = modal.classList.toggle('active');
+        if (isActive) renderCartInModal();
+    }
+}
+
+function updateCartBubble() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const bubble = document.getElementById("cart-bubble");
+    if (bubble) {
+        bubble.textContent = total;
+        bubble.style.display = total > 0 ? "flex" : "none";
+    }
+}
+
+// 1. Nueva función para eliminar un producto específico
+function removeFromCart(productName) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Filtramos el carrito para quitar el producto que coincida con el nombre
+    cart = cart.filter(item => item.name !== productName);
+
+    // Guardamos el nuevo carrito y actualizamos todo
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartBubble();
+    renderCartInModal(); // Refrescamos el modal para que desaparezca la fila
+}
+
+// 2. Función renderizar actualizada con el botón eliminar
+function renderCartInModal() {
+    const container = document.getElementById('cart-items-container');
+    const totalPriceElement = document.getElementById('cart-total-price');
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    container.innerHTML = "";
+
+    if (cart.length === 0) {
+        container.innerHTML = '<p style="color: #9B9189; padding: 20px; text-align: center;">Tu carrito está vacío</p>';
+        totalPriceElement.textContent = "$0.00";
+        return;
+    }
+
+    cart.forEach(item => {
+        const productRow = document.createElement('div');
+        productRow.style.cssText = "display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #EDE8DF;";
+
+        productRow.innerHTML = `
+            <div style="text-align: left; display: flex; align-items: center; gap: 10px;">
+                <img src="${item.image}" style="width: 40px; height: 40px; border-radius: 5px; object-fit: cover;">
+                <div>
+                    <div style="font-weight: 700; color: #2C1A0E; font-size: 0.95rem;">${item.name}</div>
+                    <div style="color: #8B6340; font-size: 0.85rem;">${item.quantity} x $${item.price.toFixed(2)}</div>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="font-weight: 700; color: #2C1A0E;">$${(item.price * item.quantity).toFixed(2)}</div>
+                <button onclick="removeFromCart('${item.name}')" style="background: none; border: none; color: #e74c3c; cursor: pointer; font-size: 1.2rem; padding: 0 5px;">
+                    &times;
+                </button>
+            </div>
+        `;
+        container.appendChild(productRow);
+    });
+
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    totalPriceElement.textContent = `$${total.toFixed(2)}`;
+}
