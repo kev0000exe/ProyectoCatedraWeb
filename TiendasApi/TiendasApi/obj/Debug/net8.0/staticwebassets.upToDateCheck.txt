@@ -1,0 +1,3 @@
+wwwroot\Panel_Administrador\Administrador.html
+wwwroot\Panel_Administrador\script.js
+wwwroot\Panel_Administrador\style.css

@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
+using BCrypt.Net;
 
 namespace TiendasAPI.Controllers
 {
@@ -50,6 +51,13 @@ namespace TiendasAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
+
+            if (!string.IsNullOrEmpty(usuario.Contraseña))
+            {
+                usuario.Contraseña = BCrypt.Net.BCrypt.HashPassword(usuario.Contraseña);
+            }
+
+
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
@@ -95,24 +103,19 @@ namespace TiendasAPI.Controllers
             if (usuario == null)
                 return Unauthorized("Correo o contraseña incorrectos.");
 
-            var hasher = new PasswordHasher<Usuario>();
-            var resultado = hasher.VerifyHashedPassword(usuario, usuario.Contraseña, dto.Contraseña);
 
-            if (resultado != PasswordVerificationResult.Success)
+            if (!BCrypt.Net.BCrypt.Verify(dto.Contraseña, usuario.Contraseña))
                 return Unauthorized("Correo o contraseña incorrectos.");
 
             // Crear el JWT
             var claims = new[]
             {
-        new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-        new Claim(ClaimTypes.Email, usuario.Email),
-        new Claim(ClaimTypes.Name, usuario.Nombre)
-        // Puedes agregar más claims si es necesario
+                new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                new Claim(ClaimTypes.Email, usuario.Email),
+                new Claim(ClaimTypes.Name, usuario.Nombre)
+            };
 
-    };
-
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("TuSuperSecretaClaveJWT123!")); // Pon esto en appsettings.json en producción
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("TuSuperSecretaClaveJWT123!"));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
@@ -125,7 +128,13 @@ namespace TiendasAPI.Controllers
 
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
-            return Ok(new { token = tokenString });
+
+            return Ok(new
+            {
+                token = tokenString,
+                nombre = usuario.Nombre,
+                id = usuario.Id
+            });
         }
 
         [HttpPost("registrar")]
@@ -140,35 +149,65 @@ namespace TiendasAPI.Controllers
             if (await _context.Usuarios.AnyAsync(u => u.Email == dto.Email))
                 return BadRequest("El email ya está registrado.");
 
-            var hasher = new PasswordHasher<Usuario>();
             var usuario = new Usuario
             {
                 Nombre = dto.Nombre,
                 Email = dto.Email,
-                Correo = dto.Email, // ← Usa el mismo valor o pídelo por separado
-                TipoUsuario = "Cliente", // ← Puedes fijar un valor por defecto o pedirlo en el DTO
+                Correo = dto.Email,
+                TipoUsuario = "Cliente",
                 FechaNacimiento = dto.FechaNacimiento,
-                Contraseña = "" // Será hasheada abajo
-            };
 
-            usuario.Contraseña = hasher.HashPassword(usuario, dto.Contraseña);
+                Contraseña = BCrypt.Net.BCrypt.HashPassword(dto.Contraseña)
+            };
 
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
-            return Ok("Usuario registrado correctamente.");
+            return Ok(new { mensaje = "Usuario registrado correctamente." });
         }
 
-
-
-        [Authorize]
-        [HttpGet("perfil")]
-        public IActionResult GetPerfil()
+        [HttpGet("obtener-todos")]
+        public async Task<IActionResult> ObtenerUsuarios()
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            return Ok(new { mensaje = "Estás autenticado", userId });
+            var usuarios = await _context.Usuarios
+                .Select(u => new
+                {
+                    u.Id,
+                    u.Nombre,
+                    u.Email,
+                    // Esta es la clave: si es nulo en la BD, C# lo envía como "Normal"
+                    TipoUsuario = u.TipoUsuario ?? "Normal"
+                })
+                .ToListAsync();
+
+            return Ok(usuarios);
         }
 
-    }
+        [HttpGet("perfil")]
+        [Authorize]
+        public async Task<IActionResult> GetPerfil()
+        {
+            // 1. Extraemos el ID del usuario directamente desde su Token
+            var userIdString = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
 
+            if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
+                return Unauthorized("Token inválido o expirado");
+
+            // 2. Buscamos a ese usuario en la base de datos
+            var usuario = await _context.Usuarios.FindAsync(userId);
+
+            if (usuario == null)
+                return NotFound("Usuario no encontrado");
+
+            // 3. Le devolvemos sus datos
+            return Ok(new
+            {
+                id = usuario.Id,
+                nombre = usuario.Nombre,
+                email = usuario.Email,
+                tipoUsuario = usuario.TipoUsuario
+            });
+        }
+    }
 }
+    

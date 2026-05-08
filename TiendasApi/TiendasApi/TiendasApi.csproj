@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
@@ -19,6 +20,12 @@
 
   <ItemGroup>
     <Folder Include="Login Proyecto Catedra\Mas\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Panel_Administrador\Administrador.html" />
+    <None Include="wwwroot\Panel_Administrador\script.js" />
+    <None Include="wwwroot\Panel_Administrador\style.css" />
   </ItemGroup>
 
 </Project>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {}
+    "C:\\Users\\imano\\Source\\Repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {
+    "C:\\Users\\imano\\Source\\Repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+        "projectUniqueName": "C:\\Users\\imano\\Source\\Repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
         "projectName": "TiendasApi",
-        "projectPath": "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
-        "packagesPath": "C:\\Users\\Kevin Menjivar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevin Menjivar\\source\\repos\\kev0000exe\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\obj\\",
+        "projectPath": "C:\\Users\\imano\\Source\\Repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
+        "packagesPath": "C:\\Users\\imano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\imano\\Source\\Repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kevin Menjivar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\imano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,12 +44,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -92,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

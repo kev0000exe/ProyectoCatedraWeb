@@ -60,6 +60,7 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+app.UseCors("AllowAll");
 
 // --- 2. BLOQUE DE AUTOCREACIÓN DE BASE DE DATOS ---
 // Este código activa la base de datos automáticamente sin comandos de terminal.
@@ -84,6 +85,8 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
+
+
 // --- 3. CONFIGURACIÓN DEL PIPELINE (MIDDLEWARES) ---
 
 if (app.Environment.IsDevelopment())
@@ -93,6 +96,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Esto permite que el navegador lea tus archivos HTML/CSS/JS
 
 app.UseCors("AllowAll");
 app.UseAuthentication();
