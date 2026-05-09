@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\wwwroot\\panel_administrador\\administrador.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\wwwroot\\panel_administrador\\administrador.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\login proyecto catedra\\carta\\carta.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\carta\\carta.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\login proyecto catedra\\carrito\\carrito.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\carrito\\carrito.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\login proyecto catedra\\carta\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\carta\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\login proyecto catedra\\carta\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\carta\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\login proyecto catedra\\carrito\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\carrito\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\login proyecto catedra\\login\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\login proyecto catedra\\login\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\models\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\migrations\\20260507051539_agregardetallepedidofinal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\migrations\\20260507051539_agregardetallepedidofinal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\migrations\\20260507051539_agregardetallepedidofinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,14 +71,6 @@
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\models\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\wwwroot\\panel_administrador\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\wwwroot\\panel_administrador\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\wwwroot\\panel_administrador\\administrador.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|solutionrelative:tiendasapi\\wwwroot\\panel_administrador\\administrador.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB131A4-5CE6-4A32-A8A6-477D467AC30C}|TiendasApi\\TiendasApi.csproj|c:\\users\\imano\\source\\repos\\proyectocatedraweb\\tiendasapi\\tiendasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,7 +167,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "TiendasApi\\WeatherForecast.cs",
@@ -152,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "Calificacion.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Calificacion.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Calificacion.cs",
@@ -176,38 +204,69 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Producto.cs",
+              "RelativeToolTip": "TiendasApi\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T00:23:29.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarritoController.cs",
-              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Controllers\\CarritoController.cs",
-              "RelativeDocumentMoniker": "TiendasApi\\Controllers\\CarritoController.cs",
-              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Controllers\\CarritoController.cs",
-              "RelativeToolTip": "TiendasApi\\Controllers\\CarritoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "DetallePedido.cs",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\DetallePedido.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Models\\DetallePedido.cs",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\DetallePedido.cs",
+              "RelativeToolTip": "TiendasApi\\Models\\DetallePedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T21:49:07.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-07T04:51:23.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20260507051539_AgregarDetallePedidoFinal.cs",
-              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
-              "RelativeDocumentMoniker": "TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
-              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
-              "RelativeToolTip": "TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwDAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T05:15:39.586Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carta\\style.css",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Carta\\style.css",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carta\\style.css",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\Carta\\style.css",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAYwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-08T04:24:36.33Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Administrador.html",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
+              "RelativeDocumentMoniker": "TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
+              "RelativeToolTip": "TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
+              "ViewState": "AgIAAKMDAAAAAAAAAAAAAK0DAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-04T01:08:10.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Carta.html",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carta\\Carta.html",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Carta\\Carta.html",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carta\\Carta.html",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\Carta\\Carta.html",
+              "ViewState": "AgIAAKYBAAAAAAAAAAAAAG4BAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-08T02:22:47.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Carrito.html",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carrito\\Carrito.html",
               "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Carrito\\Carrito.html",
@@ -215,12 +274,95 @@
               "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\Carrito\\Carrito.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-04T00:25:32.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T00:25:32.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carta\\script.js",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Carta\\script.js",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carta\\script.js",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\Carta\\script.js",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-08T02:12:34.944Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Controllers\\CarritoController.cs",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "TiendasApi\\Controllers\\CarritoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T21:49:07.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carrito\\script.js",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Carrito\\script.js",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Carrito\\script.js",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\Carrito\\script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-08T04:39:36.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\login\\style.css",
+              "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\login\\style.css",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\login\\style.css",
+              "RelativeToolTip": "TiendasApi\\Login Proyecto Catedra\\login\\style.css",
+              "ViewState": "AgIAAIQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-08T04:25:27.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
+              "RelativeToolTip": "TiendasApi\\Models\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T04:52:39.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20260507051539_AgregarDetallePedidoFinal.cs",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
+              "RelativeToolTip": "TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T05:15:39.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20260507051539_AgregarDetallePedidoFinal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.Designer.cs",
+              "RelativeDocumentMoniker": "TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.Designer.cs",
+              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.Designer.cs",
+              "RelativeToolTip": "TiendasApi\\Migrations\\20260507051539_AgregarDetallePedidoFinal.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T03:55:43.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "20260507051354_ReinicioLimpio.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507051354_ReinicioLimpio.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Migrations\\20260507051354_ReinicioLimpio.cs",
@@ -232,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -244,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "20260507050135_AgregarDetallesPedido.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Migrations\\20260507050135_AgregarDetallesPedido.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Migrations\\20260507050135_AgregarDetallesPedido.cs",
@@ -256,31 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
-              "RelativeDocumentMoniker": "TiendasApi\\Models\\Pedido.cs",
-              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Pedido.cs",
-              "RelativeToolTip": "TiendasApi\\Models\\Pedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T04:52:39.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DetallePedido.cs",
-              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\DetallePedido.cs",
-              "RelativeDocumentMoniker": "TiendasApi\\Models\\DetallePedido.cs",
-              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\DetallePedido.cs",
-              "RelativeToolTip": "TiendasApi\\Models\\DetallePedido.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwB0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T04:51:23.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\appsettings.json",
               "RelativeDocumentMoniker": "TiendasApi\\appsettings.json",
@@ -292,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Controllers\\UsuariosController.cs",
@@ -304,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Data\\ApplicationDbContext.cs",
@@ -316,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Program.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Program.cs",
@@ -328,19 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Administrador.html",
-              "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
-              "RelativeDocumentMoniker": "TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
-              "ToolTip": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
-              "RelativeToolTip": "TiendasApi\\wwwroot\\Panel_Administrador\\Administrador.html",
-              "ViewState": "AgIAAKMDAAAAAAAAAAAAAAcEAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-04T01:08:10.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "script.js",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\wwwroot\\Panel_Administrador\\script.js",
               "RelativeDocumentMoniker": "TiendasApi\\wwwroot\\Panel_Administrador\\script.js",
@@ -352,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Models\\Usuario.cs",
@@ -364,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "TiendasApi.csproj",
               "DocumentMoniker": "C:\\Users\\imano\\Source\\Repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\TiendasApi.csproj",
               "RelativeDocumentMoniker": "TiendasApi\\TiendasApi.csproj",
@@ -376,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "DTOsUsuarioLoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
               "RelativeDocumentMoniker": "TiendasApi\\DTOs\\DTOsUsuarioLoginDTO.cs",
@@ -388,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "SQLQuery1.sql",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\SQLQuery1.sql",
               "RelativeDocumentMoniker": "SQLQuery1.sql",
@@ -399,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "DTOsUsuarioRegistroDTO.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
               "RelativeDocumentMoniker": "TiendasApi\\DTOs\\DTOsUsuarioRegistroDTO.cs",
@@ -411,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "ControllersAuthController.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Controllers\\ControllersAuthController.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Controllers\\ControllersAuthController.cs",
@@ -423,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "TiendasDbContext.cs",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Data\\TiendasDbContext.cs",
               "RelativeDocumentMoniker": "TiendasApi\\Data\\TiendasDbContext.cs",
@@ -435,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "NuGet.Config",
               "DocumentMoniker": "C:\\Users\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -447,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "Registrar.html",
               "DocumentMoniker": "C:\\Users\\imano\\source\\repos\\ProyectoCatedraWeb\\TiendasApi\\TiendasApi\\Login Proyecto Catedra\\Registrar\\Registrar.html",
               "RelativeDocumentMoniker": "TiendasApi\\Login Proyecto Catedra\\Registrar\\Registrar.html",
@@ -456,6 +562,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-05-04T23:24:18.384Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

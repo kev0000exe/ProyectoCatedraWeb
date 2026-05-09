@@ -7,25 +7,33 @@
     namespace TiendasApi.Models
     {
         public class Pedido
+       
         {
             [Key]
+            [Column("id")]
             public int Id { get; set; }
 
             [Required]
+            [Column("id_usuario")]
             public int UsuarioId { get; set; }
 
             [Required]
-            public DateTime Fecha { get; set; } = DateTime.Now;
+            [Column("id_producto")]
+            public int ProductoId { get; set; }
 
             [Required]
-            [Column(TypeName = "decimal(18,2)")]
+            [Column("cantidad")]
+            public int Cantidad { get; set; }
+
+            [Column("estado")]
+            public string Estado { get; set; } = "Pendiente";
+
+            // NUEVOS CAMPOS
+            [Column("fecha")]
+            public DateTime Fecha { get; set; } = DateTime.Now;
+
+            [Column("total")]
             public decimal Total { get; set; }
-
-            
-            [ForeignKey("UsuarioId")]
-            public virtual Usuario? Usuario { get; set; }
-
-            public virtual ICollection<DetallePedido> Detalles { get; set; } = new List<DetallePedido>();
         }
     }
 }
