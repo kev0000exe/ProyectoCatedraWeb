@@ -80,8 +80,8 @@
                 <div class="avatar">A</div>
             </div>
             <div class="profile-meta">
-                <h2 class="profile-name">Alejandro Rodríguez</h2>
-                <p class="profile-email">✉ alejandro.rodriguez@airrodcoffe.com</p>
+                <h2 class="profile-name" id="userNameProfile">Alejandro Rodríguez</h2>
+                <p class="profile-email" id="userEmailProfile">✉ alejandro.rodriguez@airrodcoffe.com</p>
                 <span class="badge">☕ Miembro Selecta · desde 2022</span>
             </div>
             <button class="edit-btn">✦ Editar perfil</button>
@@ -301,6 +301,72 @@
             </ul>
         </div>
     </footer>
+    <div class="profile-header">
+        <div class="avatar-wrap">
+            <div class="avatar" id="userAvatar">?</div>
+        </div>
+        <div class="profile-meta">
+            <h2 class="profile-name" id="userNameProfile">Cargando...</h2>
+            <p class="profile-email" id="userEmailProfile">Inicia sesión para ver tu correo</p>
+            <span class="badge">☕ Miembro Selecta</span>
+        </div>
+        <button class="edit-btn">✦ Editar perfil</button>
+    </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 1. Intentamos obtener el usuario
+            const usuarioRaw = localStorage.getItem("usuario");
+            const correoGuardado = localStorage.getItem("correoUsuario");
+
+            // 2. Referencias a los elementos
+            const nameElement = document.getElementById("userNameProfile");
+            const emailElement = document.getElementById("userEmailProfile");
+            const avatarElement = document.querySelector(".avatar");
+
+            if (usuarioRaw) {
+                const usuarioGuardado = JSON.parse(usuarioRaw);
+
+                // --- ESTO ES PARA DEPURAR (Presiona F12 en el navegador para verlo) ---
+                console.log("Datos que llegaron de la DB:", usuarioGuardado);
+
+                // 3. BUSQUEDA FLEXIBLE DEL NOMBRE
+                // Intentamos todas las variantes que C# suele enviar
+                const nombreReal = usuarioGuardado.nombre ||
+                    usuarioGuardado.Nombre ||
+                    usuarioGuardado.userName ||
+                    usuarioGuardado.userNameProp ||
+                    usuarioGuardado.displayName;
+
+                const correoReal = usuarioGuardado.correo ||
+                    usuarioGuardado.email ||
+                    usuarioGuardado.Email ||
+                    usuarioGuardado.Correo ||
+                    correoGuardado;
+
+                // 4. ASIGNACIÓN DE DATOS
+                if (nombreReal && nombreReal !== "Usuario Registrado") {
+                    nameElement.textContent = nombreReal;
+                    if (avatarElement) avatarElement.textContent = nombreReal.charAt(0).toUpperCase();
+                } else if (correoReal) {
+                    // Si no hay nombre, usamos la primera parte del correo como nombre temporal
+                    nameElement.textContent = correoReal.split('@')[0];
+                    if (avatarElement) avatarElement.textContent = correoReal.charAt(0).toUpperCase();
+                } else {
+                    nameElement.textContent = "Usuario sin nombre";
+                }
+
+                if (correoReal) {
+                    emailElement.textContent = "✉ " + correoReal;
+                }
+
+            } else {
+                // SI NO HAY NADA EN LOCALSTORAGE
+                nameElement.textContent = "Usuario Invitado";
+                emailElement.textContent = "Inicia sesión para ver tu perfil";
+                if (avatarElement) avatarElement.textContent = "?";
+            }
+        });
+    </script>
 </body>
 </html>
