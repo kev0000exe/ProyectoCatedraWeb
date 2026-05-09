@@ -167,20 +167,22 @@ namespace TiendasAPI.Controllers
         }
 
         [HttpGet("obtener-todos")]
-        public async Task<IActionResult> ObtenerUsuarios()
+        public async Task<IActionResult> ObtenerTodos()
         {
-            var usuarios = await _context.Usuarios
-                .Select(u => new
-                {
+            var lista = await _context.Usuarios
+                .Select(u => new {
                     u.Id,
                     u.Nombre,
                     u.Email,
-                    // Esta es la clave: si es nulo en la BD, C# lo envía como "Normal"
-                    TipoUsuario = u.TipoUsuario ?? "Normal"
+                    TipoUsuario = u.TipoUsuario ?? "Normal",
+                    // Esto busca en la tabla Pedidos y suma en tiempo real
+                    TotalGastado = _context.Pedidos.Where(p => p.UsuarioId == u.Id).Sum(p => (decimal?)p.Total) ?? 0,
+                    CantidadPedidos = _context.Pedidos.Count(p => p.UsuarioId == u.Id),
+                    UltimoPedido = _context.Pedidos.Where(p => p.UsuarioId == u.Id).Max(p => (DateTime?)p.Fecha)
                 })
                 .ToListAsync();
 
-            return Ok(usuarios);
+            return Ok(lista);
         }
 
         [HttpGet("perfil")]

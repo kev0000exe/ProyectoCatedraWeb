@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TiendasApi.Models.TiendasApi.Models;
 using TiendasAPI.Data;
-using TiendasAPI.Models.TiendasApi.Models;
+using TiendasAPI.Models;
 
 [Route("api/[controller]")]
 [ApiController]

@@ -3,7 +3,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using TiendasAPI.Models;
-    using TiendasAPI.Models.TiendasApi.Models;
+
 
     namespace TiendasApi.Models
     {

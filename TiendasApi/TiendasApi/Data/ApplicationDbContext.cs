@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TiendasApi.Models.TiendasApi.Models;
 using TiendasAPI.Models;
-using TiendasAPI.Models.TiendasApi.Models; // Asegúrate de que el namespace sea correcto
+
 
 namespace TiendasAPI.Data
 {

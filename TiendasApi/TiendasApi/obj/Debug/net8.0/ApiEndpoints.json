@@ -48,6 +48,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TiendasApi.Controllers.DashboardController",
+    "Method": "GenerarPedidosReales",
+    "RelativePath": "api/Dashboard/generar-pedidos-reales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TiendasApi.Controllers.DashboardController",
+    "Method": "GetResumen",
+    "RelativePath": "api/Dashboard/resumen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TiendasAPI.Controllers.UsuariosController",
     "Method": "GetUsuarios",
     "RelativePath": "api/Usuarios",
@@ -174,7 +194,7 @@
   },
   {
     "ContainingType": "TiendasAPI.Controllers.UsuariosController",
-    "Method": "ObtenerUsuarios",
+    "Method": "ObtenerTodos",
     "RelativePath": "api/Usuarios/obtener-todos",
     "HttpMethod": "GET",
     "IsController": true,
