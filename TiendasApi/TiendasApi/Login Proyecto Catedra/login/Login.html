@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
-    <!--- librerias ocupadas es font awesome y Frame work ocupado boostrap 5--->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
 
     <header>
         <div class="container-hero">
@@ -29,8 +27,6 @@
                 </div>
 
                 <div class="container-logo">
-
-
                     <h1 class="logo"><a href="/">AirRodCoffe</a></h1>
                 </div>
 
@@ -51,18 +47,13 @@
     </header>
 
     <nav class="navbar_container">
-
-
-
         <ul class="menu" id="menu">
             <li><a href="../PaginInicio/index.html">Inicio</a></li>
             <li><a href="../login/Login.html">Login</a></li>
             <li><a href="../mapa/mapa.html">Mapa</a></li>
             <li><a href="../Carta/Carta.html">Menu</a></li>
             <li><a href="../Mas/blog.html">Blog</a></li>
-
             <li id="pestana-admin" style="display: none;"><a href="../Panel_Administrador/Administrador.html">Panel Administrador</a></li>
-
         </ul>
 
         <form class="search-form">
@@ -71,51 +62,36 @@
         </form>
     </nav>
 
-
-
     <video autoplay loop muted playsinline class="video-fondo">
         <source src="video/Salute Cafe & Bar.mp4" type="video/mp4">
         Tu navegador no soporta videos en HTML5.
     </video>
-    <div>
 
+    <div>
         <div class="contenido">
             <div class="logBienvenida">Bienvenido/a</div>
             <h2 class="h2-LOGIN">Usuario</h2>
             <div class="input-group mb-">
-
                 <input type="text" class="form-controlLogin" placeholder="Usuario" aria-label="Username">
             </div>
             <h2 class="h2-LOGIN">Contraseña</h2>
             <div class="input-group mb-3">
-
                 <input type="text" class="form-controlContraseña" placeholder="Contraseña" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
-
             <div class="BTN_confirmar BTN--login2">
-
-                <button class=" BTN--Iniciar">Iniciar sesion</button> <button class="BTN--Registrar"><a href="../Registrar/Registrar.html" class="BTN--Registrar2">Crear Cuenta</a></button>
-
+                <button class="BTN--Iniciar">Iniciar sesion</button>
+                <button class="BTN--Registrar"><a href="../Registrar/Registrar.html" class="BTN--Registrar2">Crear Cuenta</a></button>
             </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
     <footer class="custom-footer">
         <div class="footer-container">
             <div class="footer-logo">Coffee Beans</div>
-
             <div class="footer-copy">
                 &copy; 2024 Coffee Beans. Todos los derechos reservados.
             </div>
-
             <ul class="footer-links">
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Blog</a></li>
@@ -125,73 +101,65 @@
         </div>
     </footer>
 
+    <script>
+        // 1. VALIDACIÓN DE ADMINISTRADOR
+        // VALIDACIÓN DE ADMINISTRADOR EN LOGIN
+        document.addEventListener("DOMContentLoaded", function () {
+            const correo = localStorage.getItem("correoUsuario");
 
-
-</body>
-
-<script>
-
-    // 1. VALIDACIÓN DE ADMINISTRADOR (La ponemos primero)
-    document.addEventListener("DOMContentLoaded", function () {
-        const correo = localStorage.getItem("correoUsuario");
-        console.log("Correo detectado:", correo); // Te ayudará a ver en consola si guardó bien el correo
-
-        if (correo === "kevin@hotmail.com") {
-            const pestanaAdmin = document.getElementById("pestana-admin");
-            if (pestanaAdmin) {
-                // Usamos 'list-item' en vez de 'block' para que no rompa el diseño de tu menú
-                pestanaAdmin.style.display = "list-item";
+            // Agregamos a Rafael a la condición
+            if (correo === "kevin@hotmail.com" || correo === "rafael@gmail.com") {
+                const pestanaAdmin = document.getElementById("pestana-admin");
+                if (pestanaAdmin) {
+                    pestanaAdmin.style.display = "list-item";
+                }
             }
-        }
-    });
+        });
 
+        // 2. LÓGICA DE INICIO DE SESIÓN
+        document.querySelector('.BTN--Iniciar').addEventListener('click', async function () {
+            const correo = document.querySelector('.form-controlLogin').value;
+            const contraseña = document.querySelector('.form-controlContraseña').value;
 
-  document.querySelector('.BTN--Iniciar').addEventListener('click', async function () {
-    const correo = document.querySelector('.form-controlLogin').value;
-    const contraseña = document.querySelector('.form-controlContraseña').value;
+            if (!correo || !contraseña) {
+                alert("Por favor, completa todos los campos.");
+                return;
+            }
 
-    // 1. Validar que los campos no estén vacíos ANTES de enviar al servidor
-    if (!correo || !contraseña) {
-      alert("Por favor, completa todos los campos.");
-      return;
-    }
+            try {
+                const response = await fetch("https://localhost:7151/api/Auth/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        correo: correo,
+                        contraseña: contraseña
+                    })
+                });
 
-    try {
-      const response = await fetch("https://localhost:7151/api/Auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          correo: correo,
-          contraseña: contraseña
-        })
-      });
+                if (response.ok) {
+                    const data = await response.json();
+                    alert("Inicio de sesión exitoso");
 
-      if (response.ok) {
-        const data = await response.json();
-        alert("Inicio de sesión exitoso");
+                    // Guardamos todo lo necesario
+                    localStorage.setItem("token", data.token);
+                    localStorage.setItem("correoUsuario", correo);
 
-        // Guarda el token en localStorage
-        localStorage.setItem("token", data.token);
-        
-        // NUEVO: Guardamos el correo en el almacenamiento del navegador
-        localStorage.setItem("correoUsuario", correo);
+                    // IMPORTANTE: Guardamos el objeto completo para que el perfil lea el nombre
+                    localStorage.setItem("usuario", JSON.stringify(data));
 
-        // Redirige a la página principal
-        window.location.href = "../PaginInicio/index.html";
-      } else {
-        const error = await response.text();
-        alert("Error al iniciar sesión: " + error);
-      }
-    } catch (error) {
-      console.error("Error de red:", error);
-      alert("No se pudo conectar con el servidor.");
-    }
-  });
-
-  
-</script>
-
-
+                    // Redirige
+                    window.location.href = "../PaginInicio/index.html";
+                } else {
+                    const error = await response.text();
+                    alert("Error al iniciar sesión: " + error);
+                }
+            } catch (error) {
+                console.error("Error de red:", error);
+                alert("No se pudo conectar con el servidor.");
+            }
+        });
+    </script>
+</body>
 </html>
